@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import MEDIA_SIZES from "../auxiliary/mediaSizes.js";
+import MEDIA_SIZES from "../../auxiliary/mediaSizes";
 
 const StyledHeader = styled.header`
   margin-left: 1.5rem;

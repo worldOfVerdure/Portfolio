@@ -1,7 +1,7 @@
 import { createGlobalStyle, styled } from "styled-components";
-import Header from "./Header/Header.jsx";
-import NavTabs from "./NavTabs/NavTabs.jsx";
-import Hub from "./Hub/Hub.jsx";
+import Header from "./components/Header/Header.jsx";
+import NavTabs from "./components/NavTabs/NavTabs.jsx";
+import Hub from "./components/Hub/Hub.jsx";
 import MEDIA_SIZES from "./auxiliary/mediaSizes.js";
 
 const GlobalStyle = createGlobalStyle`

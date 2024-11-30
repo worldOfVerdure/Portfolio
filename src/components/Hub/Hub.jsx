@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
-import { MAGENTA, TEAL, GREY, HUNTER_GREEN } from "../auxiliary/colors.js";
-import MEDIA_SIZES from "../auxiliary/mediaSizes.js";
+import * as colors from "../../auxiliary/colors.js";
+import MEDIA_SIZES from "../../auxiliary/mediaSizes.js";
+import avatar from "../../assets/images/lekatee-asset-sm.jpg";
 
 const NavHub = styled.nav`
   align-items: center;
@@ -52,25 +53,25 @@ const HubLink = styled.div`
   }
 
   &:nth-child(1) {
-    background-color: ${MAGENTA};
+    background-color: ${colors.MAGENTA};
     clip-path: polygon(0 0, 70% 0, 100% 100%, 0 100%);
     grid-area: about; 
   }
 
   &:nth-child(2) {
-    background-color: ${TEAL};
+    background-color: ${colors.TEAL};
     clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
     grid-area: skills;
   }
 
   &:nth-child(4) {
     clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%);
-    background-color: ${GREY};
+    background-color: ${colors.GREY};
     grid-area: projects;  
   }
 
   &:nth-child(5) {
-    background-color: ${HUNTER_GREEN};
+    background-color: ${colors.HUNTER_GREEN};
     clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
     grid-area: contact;
   }
@@ -101,13 +102,13 @@ export default function Hub () {
       <HubLink>
         <a href="#">Skills</a>
       </HubLink>
-      <Avatar src="/avatar/lekatee-asset-sm.jpg" alt="A picture of the website author." />
+      <Avatar src={avatar} alt="A picture of the website author." />
       <HubLink>
         <a href="#">Projects</a>
       </HubLink>
       <HubLink>
         <a href="#">Contact</a>
       </HubLink>
-  </NavHub>
+    </NavHub>
   );
 }

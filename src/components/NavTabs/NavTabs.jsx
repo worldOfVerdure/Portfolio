@@ -1,6 +1,10 @@
 import { styled } from "styled-components";
 import { useState } from "react";
-import * as pageColors from "../auxiliary/colors.js";
+import * as colors from "../../auxiliary/colors.js";
+import aboutSVG from "../../assets/svgs/sentiment.svg";
+import skillsSVG from "../../assets/svgs/checklist.svg";
+import projectsSVG from "../../assets/svgs/engineering.svg";
+import contactSVG from "../../assets/svgs/mail.svg";
 
 const NavContainer = styled.nav`
   overflow: inherit;
@@ -36,19 +40,19 @@ const NavItem = styled.li`
   }
 
   &:nth-child(1) {
-    background-color: ${pageColors.MAGENTA};
+    background-color: ${colors.MAGENTA};
   }
 
   &:nth-child(2) {
-    background-color: ${pageColors.TEAL};
+    background-color: ${colors.TEAL};
   }
 
   &:nth-child(3) {
-    background-color: ${pageColors.GREY};
+    background-color: ${colors.GREY};
   }
 
   &:nth-child(4) {
-    background-color: ${pageColors.HUNTER_GREEN};
+    background-color: ${colors.HUNTER_GREEN};
   }
 `;
 
@@ -83,7 +87,7 @@ export default function NavTabs () { // look up changing state based on previous
         <NavItem $translate={linksClicked[0]}>
           <NavContent>
             <img 
-              src="/navSVGs/sentiment_very_satisfied.svg"
+              src={aboutSVG}
               alt="SVG of a happy face my about me section."
               onClick={() => handleClick(0)} 
             />
@@ -93,7 +97,7 @@ export default function NavTabs () { // look up changing state based on previous
         <NavItem $translate={linksClicked[1]}>
           <NavContent>
             <img
-              src="/navSVGs/checklist.svg"
+              src={skillsSVG}
               alt="SVG of a person at a library for my learning section."
               onClick={() => handleClick(1)}
             />
@@ -103,7 +107,7 @@ export default function NavTabs () { // look up changing state based on previous
         <NavItem $translate={linksClicked[2]}>
           <NavContent>
             <img 
-              src="/navSVGs/engineering.svg"
+              src={projectsSVG}
               alt="SVG of a construction worker for my project section."
               onClick={() => handleClick(2)}
             />
@@ -113,7 +117,7 @@ export default function NavTabs () { // look up changing state based on previous
         <NavItem $translate={linksClicked[3]}>
           <NavContent>
             <img 
-              src="/navSVGs/mail.svg"
+              src={contactSVG}
               alt="SVG of mail for my contact me section."
               onClick={() => handleClick(3)} 
             />
