@@ -19,6 +19,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    background-color: #000;
     box-sizing: border-box;
     font-size: 1.6rem;
     margin: 0 auto;

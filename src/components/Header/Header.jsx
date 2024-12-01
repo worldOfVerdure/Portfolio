@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { GREEN_WISP } from "../../auxiliary/colors";
 import MEDIA_SIZES from "../../auxiliary/mediaSizes";
 
 const StyledHeader = styled.header`
@@ -6,16 +7,8 @@ const StyledHeader = styled.header`
   padding-left: .8rem;
   width: 100%;
 
-  @media (${MEDIA_SIZES.tablet} <= width < ${MEDIA_SIZES.laptop}) {
-    margin-left: 5rem;
-  }
-
-  @media (${MEDIA_SIZES.laptopL} <= width <= ${MEDIA_SIZES.desktop}) {
-    margin-left: 3rem;
-  }
-
-  @media (width > ${MEDIA_SIZES.desktop}) {
-    margin-left: calc(8rem + 2vw);
+  & h1 {
+    color: ${GREEN_WISP};
   }
 
   & pre {
@@ -28,6 +21,18 @@ const StyledHeader = styled.header`
 
   & pre:nth-child(2) {
     font-size: clamp(3rem, calc(2.36rem + 2vw), 4.5rem);
+  }
+
+  @media (${MEDIA_SIZES.tablet} <= width < ${MEDIA_SIZES.laptop}) {
+    margin-left: 5rem;
+  }
+
+  @media (${MEDIA_SIZES.laptopL} <= width <= ${MEDIA_SIZES.desktop}) {
+    margin-left: 3rem;
+  }
+
+  @media (width > ${MEDIA_SIZES.desktop}) {
+    margin-left: calc(8rem + 2vw);
   }
 `;
 
