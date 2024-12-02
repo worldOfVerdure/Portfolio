@@ -1,13 +1,18 @@
+import About from "./components/About/About.jsx";
 import { createGlobalStyle, styled } from "styled-components";
 import Header from "./components/Header/Header.jsx";
-import NavTabs from "./components/NavTabs/NavTabs.jsx";
 import Hub from "./components/Hub/Hub.jsx";
 import MEDIA_SIZES from "./auxiliary/mediaSizes.js";
+import NavTabs from "./components/NavTabs/NavTabs.jsx";
 
 const GlobalStyle = createGlobalStyle`
-  a {
-    text-decoration: none;
+  a, h2 {
+    color: #fff;
   }
+
+  a {
+      text-decoration: none;
+    }
 
   a:hover {
     cursor: pointer;
@@ -25,6 +30,10 @@ const GlobalStyle = createGlobalStyle`
     min-height: 100vh;
     overflow: hidden;
     width: 100%;
+  }
+  // Some styles are in a selector
+  h2 {
+    margin: 0;
   }
 
   html {
@@ -58,6 +67,10 @@ const IntroSection = styled.section`
   }
 `;
 
+const Main = styled.main`
+  width: 100%;
+`;
+
 export default function App() {
   return (
     <>
@@ -67,6 +80,9 @@ export default function App() {
         <Header />
         <Hub />
       </IntroSection>
+      <Main>
+        <About />
+      </Main>
     </>
   );
 }
