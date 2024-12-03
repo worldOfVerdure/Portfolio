@@ -112,7 +112,7 @@ Error generating stack: `+i.message+`
   height: 5rem;
   justify-content: center;
   width: 13rem;
-`;function Kh(){return T.jsxs(Gh,{children:[T.jsx(rr,{children:T.jsx("a",{href:"#",children:"About"})}),T.jsx(rr,{children:T.jsx("a",{href:"#",children:"Skills"})}),T.jsx(qh,{src:W0,alt:"A picture of the website author."}),T.jsx(rr,{children:T.jsx("a",{href:"#",children:"Projects"})}),T.jsx(rr,{children:T.jsx("a",{href:"#",children:"Contact"})})]})}const Yh=ke(rr)`
+`;function Kh(){return T.jsxs(Gh,{children:[T.jsx(rr,{children:T.jsx("a",{href:"#about",children:"About"})}),T.jsx(rr,{children:T.jsx("a",{href:"#",children:"Skills"})}),T.jsx(qh,{src:W0,alt:"A picture of the website author."}),T.jsx(rr,{children:T.jsx("a",{href:"#",children:"Projects"})}),T.jsx(rr,{children:T.jsx("a",{href:"#",children:"Contact"})})]})}const Yh=ke(rr)`
   background-color: ${Zu};
   clip-path: polygon(0 0, 70% 0, 100% 100%, 0 100%);
 
@@ -170,7 +170,6 @@ Error generating stack: `+i.message+`
     margin-left: calc(8rem + 2vw);
   }
 `,bh="Portfolio of",em="  Andrew Chupka";function tm(){return T.jsx(Jh,{children:T.jsxs("h1",{children:[T.jsx("pre",{children:bh}),T.jsx("pre",{children:em})]})})}const nm="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23000'%3e%3cpath%20d='M480-260q68%200%20123.5-38.5T684-400H276q25%2063%2080.5%20101.5T480-260ZM312-520l44-42%2042%2042%2042-42-84-86-86%2086%2042%2042Zm250%200%2042-42%2044%2042%2042-42-86-86-84%2086%2042%2042ZM480-80q-83%200-156-31.5T197-197q-54-54-85.5-127T80-480q0-83%2031.5-156T197-763q54-54%20127-85.5T480-880q83%200%20156%2031.5T763-763q54%2054%2085.5%20127T880-480q0%2083-31.5%20156T763-197q-54%2054-127%2085.5T480-80Zm0-400Zm0%20320q134%200%20227-93t93-227q0-134-93-227t-227-93q-134%200-227%2093t-93%20227q0%20134%2093%20227t227%2093Z'/%3e%3c/svg%3e",rm="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23000'%3e%3cpath%20d='M222-200%2080-342l56-56%2085%2085%20170-170%2056%2057-225%20226Zm0-320L80-662l56-56%2085%2085%20170-170%2056%2057-225%20226Zm298%20240v-80h360v80H520Zm0-320v-80h360v80H520Z'/%3e%3c/svg%3e",lm="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23000'%3e%3cpath%20d='M42-120v-112q0-33%2017-62t47-44q51-26%20115-44t141-18q77%200%20141%2018t115%2044q30%2015%2047%2044t17%2062v112H42Zm80-80h480v-32q0-11-5.5-20T582-266q-36-18-92.5-36T362-320q-71%200-127.5%2018T142-266q-9%205-14.5%2014t-5.5%2020v32Zm240-240q-66%200-113-47t-47-113h-10q-9%200-14.5-5.5T172-620q0-9%205.5-14.5T192-640h10q0-45%2022-81t58-57v38q0%209%205.5%2014.5T302-720q9%200%2014.5-5.5T322-740v-54q9-3%2019-4.5t21-1.5q11%200%2021%201.5t19%204.5v54q0%209%205.5%2014.5T422-720q9%200%2014.5-5.5T442-740v-38q36%2021%2058%2057t22%2081h10q9%200%2014.5%205.5T552-620q0%209-5.5%2014.5T532-600h-10q0%2066-47%20113t-113%2047Zm0-80q33%200%2056.5-23.5T442-600H282q0%2033%2023.5%2056.5T362-520Zm300%20160-6-30q-6-2-11.5-4.5T634-402l-28%2010-20-36%2022-20v-24l-22-20%2020-36%2028%2010q4-4%2010-7t12-5l6-30h40l6%2030q6%202%2012%205t10%207l28-10%2020%2036-22%2020v24l22%2020-20%2036-28-10q-5%205-10.5%207.5T708-390l-6%2030h-40Zm20-70q12%200%2021-9t9-21q0-12-9-21t-21-9q-12%200-21%209t-9%2021q0%2012%209%2021t21%209Zm72-130-8-42q-9-3-16.5-7.5T716-620l-42%2014-28-48%2034-30q-2-5-2-8v-16q0-3%202-8l-34-30%2028-48%2042%2014q6-6%2013.5-10.5T746-798l8-42h56l8%2042q9%203%2016.5%207.5T848-780l42-14%2028%2048-34%2030q2%205%202%208v16q0%203-2%208l34%2030-28%2048-42-14q-6%206-13.5%2010.5T818-602l-8%2042h-56Zm28-90q21%200%2035.5-14.5T832-700q0-21-14.5-35.5T782-750q-21%200-35.5%2014.5T732-700q0%2021%2014.5%2035.5T782-650ZM362-200Z'/%3e%3c/svg%3e",im="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23000'%3e%3cpath%20d='M160-160q-33%200-56.5-23.5T80-240v-480q0-33%2023.5-56.5T160-800h640q33%200%2056.5%2023.5T880-720v480q0%2033-23.5%2056.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80%20320-200H160l320%20200ZM160-640v-80%20480-400Z'/%3e%3c/svg%3e",om=ke.nav`
-  overflow: hidden;
   position: fixed;
   right: -8.5rem;
   top: 0rem;
@@ -226,7 +225,7 @@ Error generating stack: `+i.message+`
     height: 100%;
     width: 100%;
   }
-`;function um(){const[e,t]=tn.useState([!1,!1,!1,!1]);function n(r){t(e.map((l,i)=>i===r||l?!l:l))}return T.jsx(om,{children:T.jsxs("ul",{children:[T.jsx(ol,{$translate:e[0],children:T.jsxs(ul,{children:[T.jsx("img",{src:nm,alt:"SVG of a happy face my about me section.",onClick:()=>n(0)}),T.jsx("a",{href:"#",children:"About Me"})]})}),T.jsx(ol,{$translate:e[1],children:T.jsxs(ul,{children:[T.jsx("img",{src:rm,alt:"SVG of a person at a library for my learning section.",onClick:()=>n(1)}),T.jsx("a",{href:"#",children:"Skills"})]})}),T.jsx(ol,{$translate:e[2],children:T.jsxs(ul,{children:[T.jsx("img",{src:lm,alt:"SVG of a construction worker for my project section.",onClick:()=>n(2)}),T.jsx("a",{href:"#",children:"Projects"})]})}),T.jsx(ol,{$translate:e[3],children:T.jsxs(ul,{children:[T.jsx("img",{src:im,alt:"SVG of mail for my contact me section.",onClick:()=>n(3)}),T.jsx("a",{href:"#",children:"Contact Me"})]})})]})})}const sm=Qh`
+`;function um(){const[e,t]=tn.useState([!1,!1,!1,!1]);function n(r){t(e.map((l,i)=>i===r||l?!l:l))}return T.jsx(om,{children:T.jsxs("ul",{children:[T.jsx(ol,{$translate:e[0],children:T.jsxs(ul,{children:[T.jsx("img",{src:nm,alt:"SVG of a happy face my about me section.",onClick:()=>n(0)}),T.jsx("a",{href:"#about",children:"About Me"})]})}),T.jsx(ol,{$translate:e[1],children:T.jsxs(ul,{children:[T.jsx("img",{src:rm,alt:"SVG of a person at a library for my learning section.",onClick:()=>n(1)}),T.jsx("a",{href:"#",children:"Skills"})]})}),T.jsx(ol,{$translate:e[2],children:T.jsxs(ul,{children:[T.jsx("img",{src:lm,alt:"SVG of a construction worker for my project section.",onClick:()=>n(2)}),T.jsx("a",{href:"#",children:"Projects"})]})}),T.jsx(ol,{$translate:e[3],children:T.jsxs(ul,{children:[T.jsx("img",{src:im,alt:"SVG of mail for my contact me section.",onClick:()=>n(3)}),T.jsx("a",{href:"#",children:"Contact Me"})]})})]})})}const sm=Qh`
   a, h2 {
     color: #fff;
   }
@@ -247,7 +246,7 @@ Error generating stack: `+i.message+`
   body {
     box-sizing: border-box;
     font-size: 1.6rem;
-    margin: 0 auto;
+    margin: 0;
     width: 100%;
   }
   // Some styles are in a selector
