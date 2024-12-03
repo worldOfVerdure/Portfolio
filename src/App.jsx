@@ -27,7 +27,6 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-size: 1.6rem;
     margin: 0 auto;
-    min-height: 100vh;
     overflow: hidden;
     width: 100%;
   }
@@ -68,6 +67,15 @@ const IntroSection = styled.section`
 `;
 
 const Main = styled.main`
+  margin-top: 12rem;
+  width: 100%;
+`;
+
+const EntireContainer = styled.div`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
 `;
 
@@ -76,13 +84,15 @@ export default function App() {
     <>
       <GlobalStyle />
       <NavTabs />
-      <IntroSection>
-        <Header />
-        <Hub />
-      </IntroSection>
-      <Main>
-        <About />
-      </Main>
+      <EntireContainer>
+        <IntroSection>
+          <Header />
+          <Hub />
+        </IntroSection>
+        <Main>
+          <About />
+        </Main>
+      </EntireContainer>
     </>
   );
 }
