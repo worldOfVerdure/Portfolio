@@ -87,7 +87,7 @@ export default function Hub () {
   return (
     <NavHub> 
       <HubLink>
-        <a href="#">About</a>
+        <a href="#about">About</a>
       </HubLink>
       <HubLink>
         <a href="#">Skills</a>

@@ -7,7 +7,6 @@ import projectsSVG from "../../assets/svgs/engineering.svg";
 import contactSVG from "../../assets/svgs/mail.svg";
 
 const NavContainer = styled.nav`
-  overflow: hidden;
   position: fixed;
   right: -8.5rem;
   top: 0rem;
@@ -91,7 +90,7 @@ export default function NavTabs () { // look up changing state based on previous
               alt="SVG of a happy face my about me section."
               onClick={() => handleClick(0)} 
             />
-            <a href="#">About Me</a>
+            <a href="#about">About Me</a>
           </NavContent>
         </NavItem>
         <NavItem $translate={linksClicked[1]}>

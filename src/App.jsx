@@ -26,7 +26,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     box-sizing: border-box;
     font-size: 1.6rem;
-    margin: 0 auto;
+    margin: 0;
     width: 100%;
   }
   // Some styles are in a selector
