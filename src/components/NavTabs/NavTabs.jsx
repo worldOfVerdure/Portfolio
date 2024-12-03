@@ -7,7 +7,7 @@ import projectsSVG from "../../assets/svgs/engineering.svg";
 import contactSVG from "../../assets/svgs/mail.svg";
 
 const NavContainer = styled.nav`
-  overflow: inherit;
+  overflow: hidden;
   position: fixed;
   right: -8.5rem;
   top: 0rem;

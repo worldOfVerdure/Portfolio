@@ -27,7 +27,6 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-size: 1.6rem;
     margin: 0 auto;
-    overflow: hidden;
     width: 100%;
   }
   // Some styles are in a selector
