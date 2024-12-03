@@ -3,8 +3,7 @@ import * as colors from "../../auxiliary/colors.js";
 import { HubLink } from "../Hub/Hub.jsx";
 import MEDIA_SIZES from "../../auxiliary/mediaSizes.js";
 import { styled } from "styled-components";
-// TODO: zzz I need to make AboutSection shrink comprable the Hub component. This will make them
-// TODO: line-up vertically.
+
 const AboutDiv = styled(HubLink)`
   background-color: ${colors.MAGENTA};
   clip-path: polygon(0 0, 70% 0, 100% 100%, 0 100%);
@@ -23,16 +22,16 @@ const AboutSection = styled.section`
     width: clamp(30rem, 80%, 40rem);
   }
 
-  @media (width >= ${MEDIA_SIZES.tablet}) {
-    margin: 0 auto;
-  }
-
   @media (${MEDIA_SIZES.tablet} <= width < ${MEDIA_SIZES.laptop}) {
     width: 60%;
   }
 
-  @media (width >= ${MEDIA_SIZES.laptop}) {
-    width: clamp(35rem, 15%, 45rem);
+  @media (${MEDIA_SIZES.laptop} <= width < ${MEDIA_SIZES.desktop}) {
+    width: 25%;
+  }
+
+  @media (width >= ${MEDIA_SIZES.desktop}) {
+    width: 15%;
   }
 `;
 
