@@ -22,7 +22,7 @@ const AboutDiv = styled(HubLink)`
 const AboutSection = styled.section`
   margin: 0 auto;
 
-  @media (${MEDIA_SIZES.mobileS} <= width < ${MEDIA_SIZES.mobileM}) {
+  @media (${MEDIA_SIZES.mobileS} <= width < ${MEDIA_SIZES.mobileL}) {
     width: 90%;
   }
 
@@ -44,7 +44,7 @@ const AboutSection = styled.section`
 `;
 
 const P = styled.p`
-  @media (${MEDIA_SIZES.mobileS} <= width < ${MEDIA_SIZES.mobileM}) {
+  @media (${MEDIA_SIZES.mobileS} <= width < ${MEDIA_SIZES.mobileL}) {
     margin: 3rem auto;
     width: 75%;
   }

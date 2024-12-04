@@ -10,13 +10,8 @@ const GlobalStyle = createGlobalStyle`
     color: #fff;
   }
 
-  a {
-      text-decoration: none;
-    }
-
   a:hover {
     cursor: pointer;
-    text-decoration: underline;
   }
 
   a:visited {
