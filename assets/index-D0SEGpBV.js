@@ -128,7 +128,7 @@ Error generating stack: `+i.message+`
 `,Zh=ke.section`
   margin: 0 auto;
 
-  @media (${I.mobileS} <= width < ${I.mobileM}) {
+  @media (${I.mobileS} <= width < ${I.mobileL}) {
     width: 90%;
   }
 
@@ -148,7 +148,7 @@ Error generating stack: `+i.message+`
     width: 15%;
   }
 `,bi=ke.p`
-  @media (${I.mobileS} <= width < ${I.mobileM}) {
+  @media (${I.mobileS} <= width < ${I.mobileL}) {
     margin: 3rem auto;
     width: 75%;
   }
@@ -241,13 +241,8 @@ Error generating stack: `+i.message+`
     color: #fff;
   }
 
-  a {
-      text-decoration: none;
-    }
-
   a:hover {
     cursor: pointer;
-    text-decoration: underline;
   }
 
   a:visited {
