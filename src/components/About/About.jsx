@@ -13,10 +13,18 @@ const AboutDiv = styled(HubLink)`
     margin-right: 3rem;
     width: fit-content;
   }
+
+  // @media (${MEDIA_SIZES.mobileS} <= width < ${MEDIA_SIZES.mobileM}) {
+  //  margin-left: 3rem;
+  // }
 `;
 
 const AboutSection = styled.section`
   margin: 0 auto;
+
+  @media (${MEDIA_SIZES.mobileS} <= width < ${MEDIA_SIZES.mobileM}) {
+    width: 90%;
+  }
 
   @media (${MEDIA_SIZES.mobileM} <= width < ${MEDIA_SIZES.tablet}) {
     width: clamp(30rem, 80%, 40rem);
@@ -36,7 +44,10 @@ const AboutSection = styled.section`
 `;
 
 const P = styled.p`
-
+  @media (${MEDIA_SIZES.mobileS} <= width < ${MEDIA_SIZES.mobileM}) {
+    margin: 3rem auto;
+    width: 75%;
+  }
 `;
 
 export default function About() {
