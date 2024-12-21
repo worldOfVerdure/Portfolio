@@ -1,26 +1,15 @@
 import * as aboutMeText from "./aboutMeText.js";
-import * as colors from "../../auxiliary/colors.js";
-import { HubLink } from "../Hub/Hub.jsx";
 import MEDIA_SIZES from "../../auxiliary/mediaSizes.js";
 import { styled } from "styled-components";
 
-const AboutDiv = styled(HubLink)`
-  background-color: ${colors.MAGENTA};
-  clip-path: polygon(0 0, 70% 0, 100% 100%, 0 100%);
+const AboutSection = styled.section`
+  margin: 0 auto;
 
   & h2 {
     font-size: 2.3rem;
     margin-right: 3rem;
     width: fit-content;
   }
-
-  // @media (${MEDIA_SIZES.mobileS} <= width < ${MEDIA_SIZES.mobileM}) {
-  //  margin-left: 3rem;
-  // }
-`;
-
-const AboutSection = styled.section`
-  margin: 0 auto;
 
   @media (${MEDIA_SIZES.mobileS} <= width < ${MEDIA_SIZES.mobileL}) {
     width: 90%;
@@ -53,9 +42,7 @@ const P = styled.p`
 export default function About() {
   return (
     <AboutSection>
-      <AboutDiv>
-        <h2 id="about">About</h2>
-      </AboutDiv>
+      <h2>About Me</h2>
       <P>{aboutMeText.p1}</P>
       <P>{aboutMeText.p2}</P>
       <P>{aboutMeText.p3}</P>

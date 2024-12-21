@@ -1,21 +1,11 @@
-import About from "./components/About/About.jsx";
 import { createGlobalStyle, styled } from "styled-components";
 import Header from "./components/Header/Header.jsx";
-import Hub from "./components/Hub/Hub.jsx";
-import MEDIA_SIZES from "./auxiliary/mediaSizes.js";
-import NavTabs from "./components/NavTabs/NavTabs.jsx";
+// import MEDIA_SIZES from "./auxiliary/mediaSizes.js";
+//import { styled } in created...
 
 const GlobalStyle = createGlobalStyle`
-  a, h2 {
-    color: #fff;
-  }
-
   a:hover {
     cursor: pointer;
-  }
-
-  a:visited {
-    color: #fff;
   }
 
   body {
@@ -34,36 +24,36 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const IntroSection = styled.section`
-  margin: 0 auto;
-  width: 100%;
+// const IntroSection = styled.section`
+//   margin: 0 auto;
+//   width: 100%;
 
-  @media (${MEDIA_SIZES.mobileM} < width < ${MEDIA_SIZES.tablet}) {
-    width: 90%;
-  }
+//   @media (${MEDIA_SIZES.mobileM} < width < ${MEDIA_SIZES.tablet}) {
+//     width: 90%;
+//   }
 
-  @media (${MEDIA_SIZES.tablet} < width < ${MEDIA_SIZES.laptop}) {
-    width: 80%;
-  }
+//   @media (${MEDIA_SIZES.tablet} < width < ${MEDIA_SIZES.laptop}) {
+//     width: 80%;
+//   }
 
-  @media (${MEDIA_SIZES.laptop} <= width < ${MEDIA_SIZES.laptopL}) {
-    width: 50%;
-  }
+//   @media (${MEDIA_SIZES.laptop} <= width < ${MEDIA_SIZES.laptopL}) {
+//     width: 50%;
+//   }
 
-  @media (${MEDIA_SIZES.laptopL} <= width < ${MEDIA_SIZES.desktop}) {
-    margin-top: 5%;
-    width: 30%;
-  }
+//   @media (${MEDIA_SIZES.laptopL} <= width < ${MEDIA_SIZES.desktop}) {
+//     margin-top: 5%;
+//     width: 30%;
+//   }
 
-  @media (width >= ${MEDIA_SIZES.desktop}) {
-    width: 25%;
-  }
-`;
+//   @media (width >= ${MEDIA_SIZES.desktop}) {
+//     width: 25%;
+//   }
+// `;
 
-const Main = styled.main`
-  margin-top: 12rem;
-  width: 100%;
-`;
+// const Main = styled.main`
+//   margin-top: 12rem;
+//   width: 100%;
+// `;
 
 const EntireContainer = styled.div`
   align-items: center;
@@ -77,15 +67,9 @@ export default function App() {
   return (
     <>
       <GlobalStyle />
-      <NavTabs />
-      <EntireContainer>
-        <IntroSection>
-          <Header />
-          <Hub />
-        </IntroSection>
-        <Main>
-          <About />
-        </Main>
+      <EntireContainer >
+        <Header />
+        
       </EntireContainer>
     </>
   );

@@ -4,7 +4,7 @@ import { styled } from "styled-components";
 const StyledHeader = styled.header`
   margin-left: 1.5rem;
   padding-left: .8rem;
-  width: 100%;
+  width: fit-content;
 
   & pre {
     margin: 0;
