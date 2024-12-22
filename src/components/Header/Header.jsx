@@ -1,9 +1,6 @@
-import MEDIA_SIZES from "../../auxiliary/mediaSizes";
 import { styled } from "styled-components";
 
 const StyledHeader = styled.header`
-  margin-left: 1.5rem;
-  padding-left: .8rem;
   width: fit-content;
 
   & pre {
@@ -11,23 +8,11 @@ const StyledHeader = styled.header`
   }
 
   & pre:nth-child(1) {
-    font-size: clamp(2.5rem, calc(1.86rem + 2vw), 4rem);
+    font-size: clamp(2.6rem, calc(1.96rem + 2vw), 4rem);
   }
 
   & pre:nth-child(2) {
     font-size: clamp(3rem, calc(2.36rem + 2vw), 4.5rem);
-  }
-
-  @media (${MEDIA_SIZES.tablet} <= width < ${MEDIA_SIZES.laptop}) {
-    margin-left: 5rem;
-  }
-
-  @media (${MEDIA_SIZES.laptopL} <= width <= ${MEDIA_SIZES.desktop}) {
-    margin-left: 3rem;
-  }
-
-  @media (width > ${MEDIA_SIZES.desktop}) {
-    margin-left: calc(8rem + 2vw);
   }
 `;
 
