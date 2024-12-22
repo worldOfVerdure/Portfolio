@@ -56,7 +56,6 @@ export default function About() {
       <img src={profilePic} alt="Picture of webpage author" />
       <P>{aboutMeText.p1}</P>
       <P>{aboutMeText.p2}</P>
-      {/* <P>{aboutMeText.p3}</P> */}
     </AboutSection>
   );
 }
