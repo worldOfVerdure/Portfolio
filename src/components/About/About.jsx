@@ -9,46 +9,44 @@ const AboutSection = styled.section`
 
   & h2 {
     font-size: clamp(2.5rem, calc(1.86rem + 2vw), 4rem);
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     width: fit-content;
   }
 
   & img {
     border-radius: 50%;
     display: block;
-    margin: 2rem auto;
+    margin: 0 2rem 0 1rem;
   }
 
   @media (${MEDIA_SIZES.mobileM} <= width < ${MEDIA_SIZES.tablet}) {
     width: clamp(30rem, 80%, 40rem);
   }
 
+  @media (min-width: 768px) {
+    & img {
+      float: left;
+    }
+  }
+
   @media (${MEDIA_SIZES.tablet} <= width < ${MEDIA_SIZES.laptop}) {
-    width: 60%;
+    width: 70%;
   }
 
   @media (${MEDIA_SIZES.laptop} <= width < ${MEDIA_SIZES.desktop}) {
-    width: 25%;
+    width: 46%;
   }
 
   @media (width >= ${MEDIA_SIZES.desktop}) {
-    width: 15%;
+    width: 25%;
     width: clamp(30rem, 80%, 40rem);
   }
 `;
 
 const P = styled.p`
-  font-size: clamp(2.2rem, calc(1.56rem + 2vw), 3.2rem);
-  text-align: center;
+  font-size: clamp(2.2rem, calc(1.56rem + 2vw), 2.8rem);
+  margin: 2rem auto;
   white-space: pre-wrap;
-
-  // @media (${MEDIA_SIZES.mobileM} <= width < ${MEDIA_SIZES.tablet}) {
-  //   font-size: 2rem;
-  // }
-    
-  // @media (${MEDIA_SIZES.tablet} <= width < ${MEDIA_SIZES.laptop}) {
-  //   font-size: 3rem;
-  // }
 `;
 
 export default function About() {
