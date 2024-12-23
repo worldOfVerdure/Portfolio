@@ -3,18 +3,6 @@ import PROJECT_DATA from "./projectData.js";
 import ProjectCard from "./ProjectCard.jsx";
 import { styled } from "styled-components";
 
-const ProjectSection = styled.section`
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-`;
-
-const MainProject = styled.main`
-  display: flex;
-  flex-direction: column;
-  gap: .5rem;
-`;
-
 //TODO: scale card when hovered
 //TODO: add state when card is clicked
 
@@ -30,6 +18,18 @@ export default function Projects() {
     </ProjectSection>
   );
 }
+
+const MainProject = styled.main`
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+`;
+
+const ProjectSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+`;
 
 /*
   Title
