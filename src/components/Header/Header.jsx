@@ -1,5 +1,19 @@
 import { styled } from "styled-components";
 
+export default function Header() {
+  const h1TitleText =`Portfolio of`;
+  const h1NameText = `  Andrew Chupka`;
+
+  return (
+    <StyledHeader>
+      <h1>
+        <pre>{h1TitleText}</pre>
+        <pre>{h1NameText}</pre>
+      </h1>
+    </StyledHeader>
+  );
+}
+
 const StyledHeader = styled.header`
   width: fit-content;
 
@@ -15,17 +29,3 @@ const StyledHeader = styled.header`
     font-size: clamp(3rem, calc(2.36rem + 2vw), 4.5rem);
   }
 `;
-
-const h1TitleText =`Portfolio of`;
-const h1NameText = `  Andrew Chupka`;
-
-export default function Header() {
-  return (
-    <StyledHeader>
-      <h1>
-        <pre>{h1TitleText}</pre>
-        <pre>{h1NameText}</pre>
-      </h1>
-    </StyledHeader>
-  );
-}

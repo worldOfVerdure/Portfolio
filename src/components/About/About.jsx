@@ -3,6 +3,17 @@ import MEDIA_SIZES from "../../auxiliary/mediaSizes.js";
 import profilePic from "../../assets/images/profilePic-s.jpg";
 import { styled } from "styled-components";
 
+export default function About() {
+  return (
+    <AboutSection>
+      <h2>About Me</h2>
+      <img src={profilePic} alt="Picture of webpage author" />
+      <P>{aboutMeText.p1}</P>
+      <P>{aboutMeText.p2}</P>
+    </AboutSection>
+  );
+}
+
 const AboutSection = styled.section`
   margin: 3rem auto;
   width: 90%;
@@ -48,14 +59,3 @@ const P = styled.p`
   margin: 2rem auto;
   white-space: pre-wrap;
 `;
-
-export default function About() {
-  return (
-    <AboutSection>
-      <h2>About Me</h2>
-      <img src={profilePic} alt="Picture of webpage author" />
-      <P>{aboutMeText.p1}</P>
-      <P>{aboutMeText.p2}</P>
-    </AboutSection>
-  );
-}
