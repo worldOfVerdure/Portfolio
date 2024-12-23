@@ -1,13 +1,13 @@
 import { colorSelector } from "./auxiliaryProjectFuncs.js";
 import { styled } from "styled-components";
 
-export default function ProjectCard({ projectProp }) {
+export default function ProjectCard(props) {
   return (
     <Card >
-      <h3>{projectProp.title}</h3>
-      <img src={projectProp.imgSrc} alt={projectProp.imgAlt} />
+      <h3>{props.title}</h3>
+      <img src={props.imgSrc} alt={props.imgAlt} />
       <TechContainer >
-        {projectProp.tech.map((techName) => {
+        {props.tech.map((techName) => {
           const colors = colorSelector(techName);
           <Tech
             $backColor = {colors[0]}
@@ -19,6 +19,22 @@ export default function ProjectCard({ projectProp }) {
           </Tech>
         })}
       </TechContainer>
+      <DescriptP >
+        {props.description}
+      </DescriptP>
+      <LinkContainer >
+        <ul>
+          <li>
+            <a
+              href={props.links[0]}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Github Page Link
+            </a>
+          </li>
+        </ul>
+      </LinkContainer>
     </Card>
   );
 }
@@ -29,6 +45,22 @@ const Card = styled.div`
   flex-direction: column;
   gap: .5rem;
   justify-content: center;
+`;
+
+const DescriptP = styled.p`
+
+`;
+
+const LinkContainer = styled.nav`
+  & ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  & li {
+
+  }
 `;
 
 const Tech = styled.div`
