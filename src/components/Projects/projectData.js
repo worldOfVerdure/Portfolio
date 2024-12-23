@@ -1,3 +1,5 @@
+import TECH_NAMES from "./techNames.js";
+
 const PROJECT_DATA = [
   {
     description: ,
