@@ -10,9 +10,9 @@ export default function ProjectCard({ projectProp }) {
         {projectProp.tech.map((techName) => {
           const colors = colorSelector(techName);
           <Tech
-            //!zzz Fix this transient prop
-            ${backColor} = {colors[0]}
-            ${borderColor} = {colors[1]}
+            $backColor = {colors[0]}
+            $borderColor = {colors[1]}
+            $textColor = {colors[2]}
             key = {techName}
           >
             {techName}
@@ -33,13 +33,17 @@ const Card = styled.div`
 
 const Tech = styled.div`
   background-color: ${backColor};
-  border: .3rem solid ${borderColor};
+  border: .4rem solid ${borderColor};
   border-radius: .8rem;
+  color: ${textColor};
+  padding .5rem;
+  width: fit-content;
 `;
 
 const TechContainer = styled.div`
   align-items: space-between;
   display: flex;
+  gap: .8rem;
   justify-content: space-around;
 
   & > * {

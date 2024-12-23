@@ -1,36 +1,43 @@
 import TECH_NAMES from "./techNames.js";
 
 export function colorSelector(techName) {
-  let backColor, borderColor;
+  let backColor, borderColor, textColor;
   switch (techName) {
     case TECH_NAMES.css:
-      backColor = ;
-      borderColor = ;
+      backColor = "#3A64E8";
+      borderColor = "#304DDC";
+      textColor = "#FFF";
       break;
     case TECH_NAMES.html:
-      backColor = ;
-      borderColor = ;
+      backColor = "#E0703A";
+      borderColor = "#D85D34";
+      textColor = "#FFF";
       break;
     case TECH_NAMES.js:
-      backColor = ;
-      borderColor = ;
+      backColor = "#F7DB5E";
+      borderColor = "#D1BB4E";
+      textColor = "#FFF";
       break;
     case TECH_NAMES.react:
-      backColor = ;
-      borderColor = ;
+      backColor = "#82D7F7";
+      borderColor = "#24272E";
+      textColor = "#414654";
       break;
     case TECH_NAMES.scss:
-      backColor = ;
-      borderColor = ;
+      backColor = "#C16A99";
+      borderColor = "#C0639F";
+      textColor = "#FFF";
       break;
     case TECH_NAMES.styled:
-      backColor = ;
-      borderColor = ;
+      backColor = "#A8609E";
+      borderColor = "#F8D466";
+      textColor = "#FFF";
       break;
     case TECH_NAMES.ts:
-      backColor = ;
-      borderColor = ;
+      backColor = "#4476C0";
+      borderColor = "#0B254E";
+      textColor = "#FFF";
       break;
   }
-  return [backColor, borderColor];
+  return [backColor, borderColor, textColor];
 }
