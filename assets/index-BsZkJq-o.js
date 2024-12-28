@@ -122,10 +122,10 @@ Error generating stack: `+i.message+`
 
   }
 `;Me.div`
-  background-color: ${backColor};
-  border: .4rem solid ${borderColor};
+  background-color: ${$backColor};
+  border: .4rem solid ${$borderColor};
   border-radius: .8rem;
-  color: ${textColor};
+  color: ${$textColor};
   padding .5rem;
   width: fit-content;
 `;const Xh=Me.div`
