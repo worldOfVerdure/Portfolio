@@ -11,9 +11,9 @@ export default function Projects() {
     <ProjectSection >
       <h2>Projects</h2>
       <MainProject >
-        {PROJECT_DATA.map((projectObj) => {
+        {PROJECT_DATA.map(projectObj => (
           <ProjectCard key={projectObj.title} {...projectObj} />
-        })}
+        ))}
       </MainProject>
     </ProjectSection>
   );
@@ -29,6 +29,7 @@ const ProjectSection = styled.section`
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  width: 90%;
 `;
 
 /*

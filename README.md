@@ -1,3 +1,3 @@
 # Portfolio Page
 
-This is my Portfolio page built with React and Styled Components.
+This is my Portfolio page built with React (Vite) and Styled Components.

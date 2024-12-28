@@ -7,7 +7,7 @@ export default function ProjectCard(props) {
       <h3>{props.title}</h3>
       <img src={props.imgSrc} alt={props.imgAlt} />
       <TechContainer >
-        {props.tech.map((techName) => {
+        {props.tech.map(techName => { //!Why no parenthesis here?
           const colors = colorSelector(techName);
           <Tech
             $backColor={colors[0]}
@@ -64,10 +64,10 @@ const LinkContainer = styled.nav`
 `;
 
 const Tech = styled.div`
-  background-color: ${$backColor};
-  border: .4rem solid ${$borderColor};
+  background-color: ${props => props.$backColor};
+  border: .4rem solid ${props => props.$borderColor};
   border-radius: .8rem;
-  color: ${$textColor};
+  color: ${props => props.$textColor};
   padding .5rem;
   width: fit-content;
 `;
