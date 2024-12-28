@@ -10,10 +10,10 @@ export default function ProjectCard(props) {
         {props.tech.map((techName) => {
           const colors = colorSelector(techName);
           <Tech
-            $backColor = {colors[0]}
-            $borderColor = {colors[1]}
-            $textColor = {colors[2]}
-            key = {techName}
+            $backColor={colors[0]}
+            $borderColor={colors[1]}
+            $textColor={colors[2]}
+            key={techName}
           >
             {techName}
           </Tech>
@@ -64,10 +64,10 @@ const LinkContainer = styled.nav`
 `;
 
 const Tech = styled.div`
-  background-color: ${backColor};
-  border: .4rem solid ${borderColor};
+  background-color: ${$backColor};
+  border: .4rem solid ${$borderColor};
   border-radius: .8rem;
-  color: ${textColor};
+  color: ${$textColor};
   padding .5rem;
   width: fit-content;
 `;
