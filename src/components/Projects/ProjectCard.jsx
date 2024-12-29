@@ -9,7 +9,8 @@ export default function ProjectCard(props) {
       <TechContainer >
         {props.tech.map(techName => {
           const colors = colorSelector(techName);
-          // console.log(`${props.title} ${techName}`);
+          console.log(`${props.title} ${techName}`);
+          return (
           <Tech
             $backColor={colors[0]}
             $borderColor={colors[1]}
@@ -18,6 +19,8 @@ export default function ProjectCard(props) {
           >
             {techName}
           </Tech>
+          );
+          //colors is an array of length 3 with the needed colors
         })}
       </TechContainer>
       <DescriptP >
