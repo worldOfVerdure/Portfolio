@@ -7,13 +7,14 @@ export default function ProjectCard(props) {
       <h3>{props.title}</h3>
       <img src={props.imgSrc} alt={props.imgAlt} />
       <TechContainer >
-        {props.tech.map(techName => { //!Why no parenthesis here?
+        {props.tech.map(techName => {
           const colors = colorSelector(techName);
+          // console.log(`${props.title} ${techName}`);
           <Tech
             $backColor={colors[0]}
             $borderColor={colors[1]}
             $textColor={colors[2]}
-            key={techName}
+            key={`${props.title} ${techName}`}
           >
             {techName}
           </Tech>
@@ -26,7 +27,7 @@ export default function ProjectCard(props) {
         <ul>
           <li>
             <a
-              href={props.links[0]}
+              href={props.links["git"]}
               rel="noopener noreferrer"
               target="_blank"
             >

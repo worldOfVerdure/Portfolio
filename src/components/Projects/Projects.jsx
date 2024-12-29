@@ -1,4 +1,3 @@
-import MEDIA_SIZES from "../../auxiliary/mediaSizes";
 import PROJECT_DATA from "./projectData.js";
 import ProjectCard from "./ProjectCard.jsx";
 import { styled } from "styled-components";
@@ -17,6 +16,11 @@ export default function Projects() {
       </MainProject>
     </ProjectSection>
   );
+
+  /* oldArray = [1, 2, 3];
+     newArray = olArray.map((e) => 2 * e);
+     So newArray = [2, 4, 6]
+  */
 }
 
 const MainProject = styled.main`
