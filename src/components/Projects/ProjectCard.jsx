@@ -2,10 +2,36 @@ import { colorSelector } from "./auxiliaryProjectFuncs.js";
 import { styled } from "styled-components";
 
 export default function ProjectCard(props) {
+  const imgArray = [];
+  Object.values(import.meta.glob(`${props.imgSrc}*.png`, { eager: true })).forEach(
+    ({ default: path }) => {
+      const url = new URL(path, import.meta.url);
+      const data = {
+        path: url.pathname,
+      };
+      imgArray.push(data);
+    }
+  );
+
   return (
     <Card >
       <h3>{props.title}</h3>
-      <img src={props.imgSrc} alt={props.imgAlt} />
+      <img
+        alt={props.imgAlt}
+        sizes="
+          (max-width: 325px) 250px,
+          (max-width: 425px) 300px,
+          (max-width: 1200px) 500px,
+          700px
+        "
+        src={imgArray[0]}
+        srcset={`
+          ${imgArray[0]} 250w
+          ${imgArray[1]} 300w
+          ${imgArray[2]} 500w
+          ${imgArray[3]} 700w
+        `}
+      />
       <TechContainer >
         {props.tech.map((techName) => {
           const colors = colorSelector(techName);

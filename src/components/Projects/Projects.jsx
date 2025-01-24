@@ -1,4 +1,3 @@
-import MEDIA_SIZES from "../../auxiliary/mediaSizes";
 import PROJECT_DATA from "./projectData.js";
 import ProjectCard from "./ProjectCard.jsx";
 import { styled } from "styled-components";
