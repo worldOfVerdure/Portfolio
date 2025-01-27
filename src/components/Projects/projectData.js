@@ -23,22 +23,24 @@ const PROJECT_DATA = [
   {
     description: descriptions[0],
     imgAlt: "Thumbnail of the match game project",
-    imgSrc: "../assets/thumbnails/#",
+    imgSrc: "../assets/images/projectCard/matchGame/matchGame.png",
     links: {
       git: "https://github.com/worldOfVerdure/Mr.Game-Match"
       // video: 
     },
+    srcSetName: "matchGame",
     tech: [TECH_NAMES.html, TECH_NAMES.css, TECH_NAMES.js],
     title: "Match Game"
   },
   {
     description: descriptions[1],
     imgAlt: "Thumbnail of the rotate cube project",
-    imgSrc: "../assets/thumbnails/#",
+    imgSrc: "../assets/images/projectCard/rotateCube/rotateCube.png",
     links: {
       git: "https://github.com/worldOfVerdure/rotateCube"
       // video: 
     },
+    srcSetName: "rotateCube",
     tech: [TECH_NAMES.html, TECH_NAMES.css, TECH_NAMES.js],
     title: "Rotate Cube"
   },
@@ -46,11 +48,12 @@ const PROJECT_DATA = [
   {
     description: descriptions[2],
     imgAlt: "Thumbnail of the position card project",
-    imgSrc: "../assets/thumbnails/#",
+    imgSrc: "../assets/images/projectCard/positionCards/positionCards.png",
     links: {
       git: "https://github.com/worldOfVerdure/positionCards"
       // video: 
     },
+    srcSetName: "positionCards",
     tech: [TECH_NAMES.html, TECH_NAMES.css, TECH_NAMES.js],
     title: "Position Card"
   },
@@ -58,11 +61,12 @@ const PROJECT_DATA = [
   {
     description: descriptions[3],
     imgAlt: "Thumbnail of the of the dice game project",
-    imgSrc: "../assets/thumbnails/#",
+    imgSrc: "../assets/images/projectCard/noDice/noDice.png",
     links: {
       git: "https://github.com/worldOfVerdure/noDice"
       // video: 
     },
+    srcSetName: "noDice",
     tech: [TECH_NAMES.html, TECH_NAMES.css, TECH_NAMES.js],
     title: "No Dice"
   }
@@ -70,11 +74,3 @@ const PROJECT_DATA = [
 
 export default PROJECT_DATA;
 
-/*
-  Title
-  Picture
-  Tech Used
-  Link to project
-  Link to Video
-  Description (maybe only when expanded, or show a portion with more feature)
-*/

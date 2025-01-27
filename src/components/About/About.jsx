@@ -7,7 +7,7 @@ export default function About() {
   return (
     <AboutSection>
       <h2>About Me</h2>
-      <img src={profilePic} alt="Picture of webpage author" />
+      <img src={profilePic} alt="Picture of webpage author" width="250" height="333" />
       <P>{aboutMeText.p1}</P>
       <P>{aboutMeText.p2}</P>
     </AboutSection>
@@ -27,7 +27,7 @@ const AboutSection = styled.section`
   & img {
     border-radius: 50%;
     display: block;
-    margin: 0 2rem 0 1rem;
+    margin: 0 auto;
   }
 
   @media (${MEDIA_SIZES.mobileM} <= width < ${MEDIA_SIZES.tablet}) {
@@ -37,6 +37,7 @@ const AboutSection = styled.section`
   @media (min-width: 768px) {
     & img {
       float: left;
+      margin: 0 2rem 0 1rem;
     }
   }
 
@@ -57,5 +58,6 @@ const AboutSection = styled.section`
 const P = styled.p`
   font-size: clamp(2.2rem, calc(1.56rem + 2vw), 2.8rem);
   margin: 2rem auto;
+  text-align: center;
   white-space: pre-wrap;
 `;

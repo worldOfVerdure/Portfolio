@@ -1,4 +1,3 @@
-import MEDIA_SIZES from "../../auxiliary/mediaSizes";
 import PROJECT_DATA from "./projectData.js";
 import ProjectCard from "./ProjectCard.jsx";
 import { styled } from "styled-components";
@@ -11,8 +10,12 @@ export default function Projects() {
     <ProjectSection >
       <h2>Projects</h2>
       <MainProject >
-        {PROJECT_DATA.map(projectObj => (
-          <ProjectCard key={projectObj.title} {...projectObj} />
+        {PROJECT_DATA.map((projectObj, i) => (
+          <ProjectCard 
+            key={projectObj.title}
+            index = {i}
+            {...projectObj} 
+          />
         ))}
       </MainProject>
     </ProjectSection>
@@ -22,13 +25,14 @@ export default function Projects() {
 const MainProject = styled.main`
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 1rem;
 `;
 
 const ProjectSection = styled.section`
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin-bottom: 2rem;
   width: 90%;
 `;
 

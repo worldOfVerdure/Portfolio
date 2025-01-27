@@ -16,7 +16,7 @@ export function colorSelector(techName) {
     case TECH_NAMES.js:
       backColor = "#F7DB5E";
       borderColor = "#D1BB4E";
-      textColor = "#FFF";
+      textColor = "#323330";
       break;
     case TECH_NAMES.react:
       backColor = "#82D7F7";
