@@ -3,27 +3,34 @@ import MEDIA_SIZES from "../../auxiliary/mediaSizes.js";
 import { styled } from "styled-components";
 
 export default function ProjectCard(props) {
+  const imgArray = [];
+  Object.values(import.meta.glob(`${props.imgSrc}*.png`, { eager: true })).forEach(
+    ({ default: path }) => {
+      const url = new URL(path, import.meta.url);
+      const data = {
+        path: url.pathname,
+      };
+      imgArray.push(data);
+    }
+  );
+
   return (
     <Card >
       <h3>{props.title}</h3>
       <img
         alt={props.imgAlt}
-        sizes={`
-          ((min-width: ${MEDIA_SIZES.mobileS}) and (max-width: ${MEDIA_SIZES.mobileM})) 250px,
-          (max-width: ${MEDIA_SIZES.tablet}) 300px,
-          (max-width: ${MEDIA_SIZES.laptop}) 500px,
-          (max-width: ${MEDIA_SIZES.laptopL}) 700px,
-          (max-width: ${MEDIA_SIZES.desktop}) 900px,
-          1200px
-        `}
-        src={props.imgSrc}
-        srcSet={`
-          ../assets/projectCard/${props.srcSetName}/${props.srcSetName}-250.png 250w,
-          ../assets/projectCard/${props.srcSetName}${props.srcSetName}-300.png 300w,
-          ../assets/projectCard/${props.srcSetName}${props.srcSetName}-500.png 500w,
-          ../assets/projectCard/${props.srcSetName}${props.srcSetName}-700.png 700w,
-          ../assets/projectCard/${props.srcSetName}${props.srcSetName}-900.png 900w,
-          ../assets/projectCard/${props.srcSetName}${props.srcSetName}-1200.png 1200w,
+        sizes="
+          (max-width: 325px) 250px,
+          (max-width: 425px) 300px,
+          (max-width: 1200px) 500px,
+          700px
+        "
+        src={imgArray[0]}
+        srcset={`
+          ${imgArray[0]} 250w
+          ${imgArray[1]} 300w
+          ${imgArray[2]} 500w
+          ${imgArray[3]} 700w
         `}
       />
       <TechContainer >

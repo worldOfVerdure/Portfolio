@@ -23,7 +23,11 @@ const PROJECT_DATA = [
   {
     description: descriptions[0],
     imgAlt: "Thumbnail of the match game project",
+<<<<<<< HEAD
     imgSrc: "../assets/images/projectCard/matchGame/matchGame.png",
+=======
+    imgSrc: "../assets/thumbnails/game-match/",
+>>>>>>> dddb10cbd53f8365fa322b4038cbb5703e019f4f
     links: {
       git: "https://github.com/worldOfVerdure/Mr.Game-Match"
       // video: 
@@ -35,7 +39,11 @@ const PROJECT_DATA = [
   {
     description: descriptions[1],
     imgAlt: "Thumbnail of the rotate cube project",
+<<<<<<< HEAD
     imgSrc: "../assets/images/projectCard/rotateCube/rotateCube.png",
+=======
+    imgSrc: "../assets/thumbnails/cube-project",
+>>>>>>> dddb10cbd53f8365fa322b4038cbb5703e019f4f
     links: {
       git: "https://github.com/worldOfVerdure/rotateCube"
       // video: 
@@ -48,7 +56,11 @@ const PROJECT_DATA = [
   {
     description: descriptions[2],
     imgAlt: "Thumbnail of the position card project",
+<<<<<<< HEAD
     imgSrc: "../assets/images/projectCard/positionCards/positionCards.png",
+=======
+    imgSrc: "../assets/thumbnails/position-cards",
+>>>>>>> dddb10cbd53f8365fa322b4038cbb5703e019f4f
     links: {
       git: "https://github.com/worldOfVerdure/positionCards"
       // video: 
@@ -61,7 +73,11 @@ const PROJECT_DATA = [
   {
     description: descriptions[3],
     imgAlt: "Thumbnail of the of the dice game project",
+<<<<<<< HEAD
     imgSrc: "../assets/images/projectCard/noDice/noDice.png",
+=======
+    imgSrc: "../assets/thumbnails/no-dice",
+>>>>>>> dddb10cbd53f8365fa322b4038cbb5703e019f4f
     links: {
       git: "https://github.com/worldOfVerdure/noDice"
       // video: 
