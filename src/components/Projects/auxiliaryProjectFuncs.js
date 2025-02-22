@@ -41,3 +41,50 @@ export function colorSelector(techName) {
   }
   return [backColor, borderColor, textColor];
 }
+
+export function imageURLPathSelector (title) {
+  let images;
+  switch (title) {
+    case "Match Game":
+      images = import.meta.glob("../../assets/projectCard/matchGame/*.png", { eager: true });
+      break;
+    case "Rotate Cube":
+      images = import.meta.glob("../../assets/projectCard/rotateCube/*.png", { eager: true });
+      break;
+    case "Position Card":
+      images = import.meta.glob("../../assets/projectCard/positionCards/*.png", { eager: true });
+      break;
+    case "noDice":
+      images = import.meta.glob("../../assets/projectCard/noDice/*.png", { eager: true });
+      break;
+  }
+  
+//!zzz At the least, make sure the array is sorted before converting using forEach method.
+  let imgArray = [];
+  let newArray = Object.values(images).forEach(
+    ({ default: path }) => {
+      const url = new URL(path, import.meta.url);
+      const data = {
+        path: url.pathname
+      };
+      imgArray.push(data);
+    }
+  );
+  // const imgArray = [];
+  // Object.values(import.meta.glob(`${props.imgSrc}*.png`, { eager: true })).forEach(
+  //   ({ default: path }) => {
+  //     const url = new URL(path, import.meta.url);
+  //     const data = {
+  //       path: url.pathname,
+  //     };
+  //     imgArray.push(data);
+  //   }
+  // );
+}
+
+// let images;
+// switch (imageFolderUrl) {
+//   case "Project1": images = import.meta.globEager("/src/resources/projects/images/Project1/*.png");
+//   case "Project2": images = import.meta.globEager("/src/resources/projects/images/Project2/*.png");
+//   ...
+// }

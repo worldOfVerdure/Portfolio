@@ -25,12 +25,15 @@ const EntireContainer = styled.div`
 `;
 
 const GlobalStyle = createGlobalStyle`
+  * {
+    boxing-size: border-box;
+  }
+
   a:hover {
     cursor: pointer;
   }
 
   body {
-    box-sizing: border-box;
     font-size: 1.6rem;
     margin: 0;
     width: 100%;

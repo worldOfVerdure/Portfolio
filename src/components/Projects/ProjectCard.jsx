@@ -1,18 +1,9 @@
-import { colorSelector } from "./auxiliaryProjectFuncs.js";
+import { colorSelector, imageURLPathSelector } from "./auxiliaryProjectFuncs.js";
 import MEDIA_SIZES from "../../auxiliary/mediaSizes.js";
 import { styled } from "styled-components";
 
 export default function ProjectCard(props) {
-  const imgArray = [];
-  Object.values(import.meta.glob(`${props.imgSrc}*.png`, { eager: true })).forEach(
-    ({ default: path }) => {
-      const url = new URL(path, import.meta.url);
-      const data = {
-        path: url.pathname,
-      };
-      imgArray.push(data);
-    }
-  );
+  const imgArray = imageURLPathSelector(props.title);
 
   return (
     <Card >
