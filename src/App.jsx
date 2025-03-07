@@ -26,7 +26,7 @@ const EntireContainer = styled.div`
 
 const GlobalStyle = createGlobalStyle`
   * {
-    boxing-size: border-box;
+    box-sizing: border-box;
   }
 
   a:hover {

@@ -14,9 +14,6 @@ const descriptions = [
   blandit volutpat velit fermentum. Lacinia maecenas sodales ipsum nibh fusce class. Sed hac
   faucibus netus laoreet eros auctor convallis sapien eros. Tempus sapien pretium at integer
   faucibus consequat egestas.`,
-
-  `Lorem ipsum odor amet, consectetuer adipiscing elit. Torquent pellentesque sapien dignissim curae
-  nisl montes eros. Ut aenean lobortis potenti a enim eros.`
 ];
 
 const PROJECT_DATA = [
@@ -25,7 +22,7 @@ const PROJECT_DATA = [
     imgAlt: "Thumbnail of the match game project",
     imgSrc: "../assets/thumbnails/game-match/",
     links: {
-      git: "https://github.com/worldOfVerdure/Mr.Game-Match"
+      git: "https://worldofverdure.github.io/GameNMatch/"
       // video: 
     },
     srcSetName: "matchGame",
@@ -44,22 +41,8 @@ const PROJECT_DATA = [
     tech: [TECH_NAMES.html, TECH_NAMES.css, TECH_NAMES.js],
     title: "Rotate Cube"
   },
-
   {
     description: descriptions[2],
-    imgAlt: "Thumbnail of the position card project",
-    imgSrc: "../assets/thumbnails/position-cards",
-    links: {
-      git: "https://github.com/worldOfVerdure/positionCards"
-      // video: 
-    },
-    srcSetName: "positionCards",
-    tech: [TECH_NAMES.html, TECH_NAMES.css, TECH_NAMES.js],
-    title: "Position Cards"
-  },
-
-  {
-    description: descriptions[3],
     imgAlt: "Thumbnail of the of the dice game project",
     imgSrc: "../assets/thumbnails/no-dice",
     links: {

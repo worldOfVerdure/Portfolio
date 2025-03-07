@@ -1,4 +1,25 @@
 import TECH_NAMES from "./techNames.js";
+import matchGame from "../../assets/images/projectCard/matchGame/matchGame.png";
+import matchGame250 from "../../assets/images/projectCard/matchGame/matchGame-250.png";
+import matchGame300 from "../../assets/images/projectCard/matchGame/matchGame-300.png";
+import matchGame500 from "../../assets/images/projectCard/matchGame/matchGame-500.png";
+import matchGame700 from "../../assets/images/projectCard/matchGame/matchGame-700.png";
+import matchGame900 from "../../assets/images/projectCard/matchGame/matchGame-900.png";
+import matchGame1200 from "../../assets/images/projectCard/matchGame/matchGame-1200.png";
+import rotateCube from "../../assets/images/projectCard/rotateCube/rotateCube.png";
+import rotateCube250 from "../../assets/images/projectCard/rotateCube/rotateCube-250.png";
+import rotateCube300 from "../../assets/images/projectCard/rotateCube/rotateCube-300.png";
+import rotateCube500 from "../../assets/images/projectCard/rotateCube/rotateCube-500.png";
+import rotateCube700 from "../../assets/images/projectCard/rotateCube/rotateCube-700.png";
+import rotateCube900 from "../../assets/images/projectCard/rotateCube/rotateCube-900.png";
+import rotateCube1200 from "../../assets/images/projectCard/rotateCube/rotateCube-1200.png";
+import noDice from "../../assets/images/projectCard/noDice/noDice.png";
+import noDice250 from "../../assets/images/projectCard/noDice/noDice-250.png";
+import noDice300 from "../../assets/images/projectCard/noDice/noDice-300.png";
+import noDice500 from "../../assets/images/projectCard/noDice/noDice-500.png";
+import noDice700 from "../../assets/images/projectCard/noDice/noDice-700.png";
+import noDice900 from "../../assets/images/projectCard/noDice/noDice-900.png";
+import noDice1200 from "../../assets/images/projectCard/noDice/noDice-1200.png";
 
 export function colorSelector(techName) {
   let backColor, borderColor, textColor;
@@ -42,49 +63,44 @@ export function colorSelector(techName) {
   return [backColor, borderColor, textColor];
 }
 
-export function imageURLPathSelector (title) {
-  let images;
-  switch (title) {
+export function projectImages (projectTitle) {
+  let projectImageArray;
+  switch (projectTitle) {
     case "Match Game":
-      images = import.meta.glob("../../assets/projectCard/matchGame/*.png", { eager: true });
-      break;
+      projectImageArray = [
+        matchGame, 
+        matchGame250, 
+        matchGame300, 
+        matchGame500, 
+        matchGame700, 
+        matchGame900, 
+        matchGame1200
+      ];
+      break
     case "Rotate Cube":
-      images = import.meta.glob("../../assets/projectCard/rotateCube/*.png", { eager: true });
+      projectImageArray = [
+        rotateCube,
+        rotateCube250,
+        rotateCube300,
+        rotateCube500,
+        rotateCube700,
+        rotateCube900,
+        rotateCube1200
+      ];
       break;
-    case "Position Card":
-      images = import.meta.glob("../../assets/projectCard/positionCards/*.png", { eager: true });
+    case "No Dice":
+      projectImageArray = [
+        noDice,
+        noDice250,
+        noDice300,
+        noDice500,
+        noDice700,
+        noDice900,
+        noDice1200
+      ];
       break;
-    case "noDice":
-      images = import.meta.glob("../../assets/projectCard/noDice/*.png", { eager: true });
-      break;
+    default :
+      console.log("An invalid project title was passed.");
   }
-  
-//!zzz At the least, make sure the array is sorted before converting using forEach method.
-  let imgArray = [];
-  let newArray = Object.values(images).forEach(
-    ({ default: path }) => {
-      const url = new URL(path, import.meta.url);
-      const data = {
-        path: url.pathname
-      };
-      imgArray.push(data);
-    }
-  );
-  // const imgArray = [];
-  // Object.values(import.meta.glob(`${props.imgSrc}*.png`, { eager: true })).forEach(
-  //   ({ default: path }) => {
-  //     const url = new URL(path, import.meta.url);
-  //     const data = {
-  //       path: url.pathname,
-  //     };
-  //     imgArray.push(data);
-  //   }
-  // );
+  return projectImageArray;
 }
-
-// let images;
-// switch (imageFolderUrl) {
-//   case "Project1": images = import.meta.globEager("/src/resources/projects/images/Project1/*.png");
-//   case "Project2": images = import.meta.globEager("/src/resources/projects/images/Project2/*.png");
-//   ...
-// }

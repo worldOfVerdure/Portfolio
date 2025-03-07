@@ -1,9 +1,9 @@
-import { colorSelector, imageURLPathSelector } from "./auxiliaryProjectFuncs.js";
+import { colorSelector, projectImages } from "./auxiliaryProjectFuncs.js";
 import MEDIA_SIZES from "../../auxiliary/mediaSizes.js";
 import { styled } from "styled-components";
 
 export default function ProjectCard(props) {
-  const imgArray = imageURLPathSelector(props.title);
+  const imgArray = projectImages(props.title);
 
   return (
     <Card >
@@ -13,15 +13,19 @@ export default function ProjectCard(props) {
         sizes="
           (max-width: 325px) 250px,
           (max-width: 425px) 300px,
-          (max-width: 1200px) 500px,
-          700px
+          (max-width: 600px) 500px,
+          (max-width: 950px) 700px,
+          (max-width: 1200px) 900px,
+          1200px
         "
-        src={imgArray[0]}
-        srcset={`
-          ${imgArray[0]} 250w
-          ${imgArray[1]} 300w
-          ${imgArray[2]} 500w
-          ${imgArray[3]} 700w
+        src={imgArray[4]}
+        srcSet={`
+          ${imgArray[1]} 250w,
+          ${imgArray[2]} 300w,
+          ${imgArray[3]} 500w,
+          ${imgArray[4]} 700w,
+          ${imgArray[5]} 900w,
+          ${imgArray[6]} 1200w
         `}
       />
       <TechContainer >
@@ -69,7 +73,10 @@ const Card = styled.div`
   justify-content: center;
 
   & img {
+    border-radius: .6rem;
+    max-width: 60rem;
     width: 80%;
+    //TODO: zzzGet rid of width, 
   }
 `;
 
@@ -104,6 +111,7 @@ const TechContainer = styled.div`
   display: flex;
   gap: .8rem;
   justify-content: space-around;
+  margin-top: 2rem;
 
   & > * {
     flex: 1 auto;

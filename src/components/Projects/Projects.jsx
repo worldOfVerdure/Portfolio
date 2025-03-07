@@ -35,12 +35,3 @@ const ProjectSection = styled.section`
   margin-bottom: 2rem;
   width: 90%;
 `;
-
-/*
-  Title
-  Picture
-  Tech Used
-  Link to project
-  Link to Video
-  Description (maybe only when expanded, or show a portion with more feature)
-*/
