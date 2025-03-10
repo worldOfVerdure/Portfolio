@@ -67,6 +67,7 @@ const Card = styled.div`
   align-items: center;
   border: .2rem solid #000;
   display: flex;
+  max-width: 75rem;
   padding: 1rem;
   flex-direction: column;
   gap: .5rem;
@@ -76,7 +77,6 @@ const Card = styled.div`
     border-radius: .6rem;
     max-width: 60rem;
     width: 80%;
-    //TODO: zzzGet rid of width, 
   }
 `;
 
@@ -90,10 +90,6 @@ const LinkContainer = styled.nav`
     margin: 0;
     padding: 0;
   }
-
-  & li {
-
-  }
 `;
 
 const Tech = styled.div`
@@ -101,14 +97,16 @@ const Tech = styled.div`
   border: .4rem solid ${props => props.$borderColor};
   border-radius: .8rem;
   color: ${props => props.$textColor};
+  display: flex;
+  justify-content: center;
   padding: .5rem 2rem;
   width: fit-content;
 `;
 
 const TechContainer = styled.div`
-  align-items: space-between;
-  box-sizing: content-box;
+  align-items: center;
   display: flex;
+  flex-wrap: wrap;
   gap: .8rem;
   justify-content: space-around;
   margin-top: 2rem;

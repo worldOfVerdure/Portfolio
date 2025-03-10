@@ -1,3 +1,4 @@
+import MEDIA_SIZES from "../../auxiliary/mediaSizes.js";
 import PROJECT_DATA from "./projectData.js";
 import ProjectCard from "./ProjectCard.jsx";
 import { styled } from "styled-components";
@@ -26,9 +27,17 @@ const MainProject = styled.main`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  width: 95%;
+
+  @media (min-width: ${MEDIA_SIZES.laptop}) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 `;
 
 const ProjectSection = styled.section`
+  align-items: center;
   display: flex;
   flex-direction: column;
   gap: 2rem;

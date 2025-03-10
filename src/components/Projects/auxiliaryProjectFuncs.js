@@ -20,6 +20,13 @@ import noDice500 from "../../assets/images/projectCard/noDice/noDice-500.png";
 import noDice700 from "../../assets/images/projectCard/noDice/noDice-700.png";
 import noDice900 from "../../assets/images/projectCard/noDice/noDice-900.png";
 import noDice1200 from "../../assets/images/projectCard/noDice/noDice-1200.png";
+import managementApp from "../../assets/images/projectCard/managementApp/managementApp.png";
+import managementApp250 from "../../assets/images/projectCard/managementApp/managementApp-250.png";
+import managementApp300 from "../../assets/images/projectCard/managementApp/managementApp-300.png";
+import managementApp500 from "../../assets/images/projectCard/managementApp/managementApp-500.png";
+import managementApp700 from "../../assets/images/projectCard/managementApp/managementApp-700.png";
+import managementApp900 from "../../assets/images/projectCard/managementApp/managementApp-900.png";
+import managementApp1200 from "../../assets/images/projectCard/managementApp/managementApp-1200.png";
 
 export function colorSelector(techName) {
   let backColor, borderColor, textColor;
@@ -67,6 +74,7 @@ export function projectImages (projectTitle) {
   let projectImageArray;
   switch (projectTitle) {
     case "Match Game":
+      console.log("Match game yup yup");
       projectImageArray = [
         matchGame, 
         matchGame250, 
@@ -78,6 +86,7 @@ export function projectImages (projectTitle) {
       ];
       break
     case "Rotate Cube":
+      console.log("Rotate Cube yup yup");
       projectImageArray = [
         rotateCube,
         rotateCube250,
@@ -89,6 +98,7 @@ export function projectImages (projectTitle) {
       ];
       break;
     case "No Dice":
+      console.log("No Dice yup yup");
       projectImageArray = [
         noDice,
         noDice250,
@@ -99,6 +109,17 @@ export function projectImages (projectTitle) {
         noDice1200
       ];
       break;
+    case "Management App":
+      console.log("Management App yup yup");
+      projectImageArray = [
+        managementApp,
+        managementApp250,
+        managementApp300,
+        managementApp500,
+        managementApp700,
+        managementApp900,
+        managementApp1200
+      ];
     default :
       console.log("An invalid project title was passed.");
   }
