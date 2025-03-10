@@ -1,5 +1,4 @@
 import { colorSelector, projectImages } from "./auxiliaryProjectFuncs.js";
-import MEDIA_SIZES from "../../auxiliary/mediaSizes.js";
 import { styled } from "styled-components";
 
 export default function ProjectCard(props) {

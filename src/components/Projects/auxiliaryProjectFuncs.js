@@ -74,7 +74,6 @@ export function projectImages (projectTitle) {
   let projectImageArray;
   switch (projectTitle) {
     case "Match Game":
-      console.log("Match game yup yup");
       projectImageArray = [
         matchGame, 
         matchGame250, 
@@ -86,7 +85,6 @@ export function projectImages (projectTitle) {
       ];
       break
     case "Rotate Cube":
-      console.log("Rotate Cube yup yup");
       projectImageArray = [
         rotateCube,
         rotateCube250,
@@ -98,7 +96,6 @@ export function projectImages (projectTitle) {
       ];
       break;
     case "No Dice":
-      console.log("No Dice yup yup");
       projectImageArray = [
         noDice,
         noDice250,
@@ -110,7 +107,6 @@ export function projectImages (projectTitle) {
       ];
       break;
     case "Management App":
-      console.log("Management App yup yup");
       projectImageArray = [
         managementApp,
         managementApp250,
@@ -120,6 +116,7 @@ export function projectImages (projectTitle) {
         managementApp900,
         managementApp1200
       ];
+      break;
     default :
       console.log("An invalid project title was passed.");
   }
