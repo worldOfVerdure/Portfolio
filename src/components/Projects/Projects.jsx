@@ -24,15 +24,22 @@ export default function Projects() {
 }
 
 const MainProject = styled.main`
+  // align-items: center;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: 95%;
+  width: fit-content;
 
-  @media (min-width: ${MEDIA_SIZES.laptop}) {
+  @media (min-width: ${MEDIA_SIZES.tablet}) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+  }
+
+  @media (min-width: ${MEDIA_SIZES.laptopL}) {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
   }
 `;
 

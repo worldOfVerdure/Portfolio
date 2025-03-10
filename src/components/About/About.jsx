@@ -27,37 +27,21 @@ const AboutSection = styled.section`
   & img {
     border-radius: 50%;
     display: block;
-    margin: 0 auto;
-  }
-
-  @media (${MEDIA_SIZES.mobileM} <= width < ${MEDIA_SIZES.tablet}) {
-    width: clamp(30rem, 80%, 40rem);
-  }
-
-  @media (min-width: 768px) {
-    & img {
-      float: left;
-      margin: 0 2rem 0 1rem;
-    }
-  }
-
-  @media (${MEDIA_SIZES.tablet} <= width < ${MEDIA_SIZES.laptop}) {
-    width: 70%;
-  }
-
-  @media (${MEDIA_SIZES.laptop} <= width < ${MEDIA_SIZES.desktop}) {
-    width: 46%;
-  }
-
-  @media (width >= ${MEDIA_SIZES.desktop}) {
-    width: 25%;
-    width: clamp(30rem, 80%, 40rem);
+    float: left;
+    margin: 0 2rem 1rem 0;
   }
 `;
 
+const AboutTextContainer = styled.div`
+
+`;
+
 const P = styled.p`
-  font-size: clamp(2.2rem, calc(1.56rem + 2vw), 2.8rem);
+  font-size: clamp(1.8rem, calc(1.56rem + 1vw), 2.4rem);
   margin: 2rem auto;
-  text-align: center;
   white-space: pre-wrap;
+
+  // @media(min-width: ${MEDIA_SIZES.laptopL}) {
+  //   width: 65%;
+  // }
 `;
