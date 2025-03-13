@@ -7,29 +7,31 @@ export default function About() {
   return (
     <AboutSection>
       <h2>About Me</h2>
-      <img src={profilePic} alt="Picture of webpage author" width="250" height="333" />
       <P>{aboutMeText.p1}</P>
       <P>{aboutMeText.p2}</P>
+      <Avatar src={profilePic} alt="Picture of webpage author" />
     </AboutSection>
   );
 }
 
 const AboutSection = styled.section`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   margin: 3rem auto;
   width: 90%;
 
   & h2 {
+    align-self: start;
     font-size: clamp(2.5rem, calc(1.86rem + 2vw), 4rem);
-    margin-bottom: 5rem;
+    margin-bottom: 1.5rem;
     width: fit-content;
   }
+`;
 
-  & img {
+const Avatar = styled.img`
     border-radius: 50%;
-    display: block;
-    float: left;
-    margin: 0 2rem 1rem 0;
-  }
+    width: 18rem;
 `;
 
 const AboutTextContainer = styled.div`
@@ -37,8 +39,9 @@ const AboutTextContainer = styled.div`
 `;
 
 const P = styled.p`
-  font-size: clamp(1.8rem, calc(1.56rem + 1vw), 2.4rem);
-  margin: 2rem auto;
+  font-size: clamp(1.6rem, calc(1.2rem + 1vw), 2rem);
+  line-height: 1.4;
+  margin: 1.5rem auto;
   white-space: pre-wrap;
 
   // @media(min-width: ${MEDIA_SIZES.laptopL}) {

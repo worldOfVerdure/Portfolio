@@ -1,4 +1,7 @@
-export const GREY = "#969b9f";
-export const HUNTER_GREEN = "#2b6e5f";
-export const MAGENTA = "#f0f";
-export const TEAL = "#56c2cf";
+export const EMERALD_GREEN = {
+  darkest: "##267240",
+  darker: "#329955",
+  base: "#3DC169",
+  lighter: "#63CF87",
+  lightest: "#89DBA5"
+};

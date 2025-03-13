@@ -97,9 +97,10 @@ const Tech = styled.div`
   border-radius: .8rem;
   color: ${props => props.$textColor};
   display: flex;
+  flex-grow: none;
   justify-content: center;
-  padding: .5rem 2rem;
-  width: fit-content;
+  padding: .5rem .8rem;
+  max-width: fit-content;
 `;
 
 const TechContainer = styled.div`
@@ -107,7 +108,7 @@ const TechContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: .8rem;
-  justify-content: space-around;
+  justify-content: start;
   margin-top: 2rem;
 
   & > * {
