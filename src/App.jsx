@@ -1,6 +1,5 @@
 import About from "./components/About/About.jsx";
 import { createGlobalStyle, styled } from "styled-components";
-import { EMERALD_GREEN } from "./auxiliary/colors.js";
 import Header from "./components/Header/Header.jsx";
 import Projects from "./components/Projects/Projects.jsx";
 
@@ -35,7 +34,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    // background-color: ${EMERALD_GREEN.base};
     font-size: 1.6rem;
     margin: 0;
     width: 100%;

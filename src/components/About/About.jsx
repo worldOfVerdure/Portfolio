@@ -1,6 +1,5 @@
 import * as aboutMeText from "./aboutMeText.js";
 import MEDIA_SIZES from "../../auxiliary/mediaSizes.js";
-import profilePic from "../../assets/images/profilePic-s.jpg";
 import { styled } from "styled-components";
 
 export default function About() {
@@ -9,7 +8,6 @@ export default function About() {
       <h2>About Me</h2>
       <P>{aboutMeText.p1}</P>
       <P>{aboutMeText.p2}</P>
-      <Avatar src={profilePic} alt="Picture of webpage author" />
     </AboutSection>
   );
 }
@@ -27,11 +25,6 @@ const AboutSection = styled.section`
     margin-bottom: 1.5rem;
     width: fit-content;
   }
-`;
-
-const Avatar = styled.img`
-    border-radius: 50%;
-    width: 18rem;
 `;
 
 const AboutTextContainer = styled.div`
