@@ -16,61 +16,65 @@ export default function Header() {
         <pre>{h1GreetingsText}</pre>
         <pre>{h1NameText}</pre>
       </h1>
-      <Avatar src={profilePic} alt="Picture of the webpage author." />
-      <SocialMediaNavContainer>
-        <ul>
-          <SocialMediaLink>
-            <SocialMediaAnchor 
-              imgAlt="The Instagram icon"
-              imgSrc={instagramIcon}
-              link="#"
-            />
-          </SocialMediaLink>
-          <SocialMediaLink>
-            <SocialMediaAnchor 
-              imgAlt="The Linkedin icon"
-              imgSrc={linkedinIcon}
-              link="https://www.linkedin.com/in/andrew-chupka/"
-            />
-          </SocialMediaLink>
-          <SocialMediaLink>
-            <SocialMediaAnchor 
-              imgAlt="The Github icon"
-              imgSrc={githubIcon}
-              link="https://github.com/worldOfVerdure"
-            />
-          </SocialMediaLink>
-        </ul>
-      </SocialMediaNavContainer>
+      <AvatarSocialNavContainer>
+        <Avatar src={profilePic} alt="Picture of the webpage author." />
+        <SocialMediaNavContainer>
+          <ul>
+            <li>
+              <SocialMediaAnchor 
+                imgAlt="The Instagram icon"
+                imgSrc={instagramIcon}
+                link="https://www.instagram.com/fueled_by_decaf/"
+              />
+            </li>
+            <li>
+              <SocialMediaAnchor 
+                imgAlt="The Linkedin icon"
+                imgSrc={linkedinIcon}
+                link="https://www.linkedin.com/in/andrew-chupka/"
+              />
+            </li>
+            <li>
+              <SocialMediaAnchor 
+                imgAlt="The Github icon"
+                imgSrc={githubIcon}
+                link="https://github.com/worldOfVerdure"
+              />
+            </li>
+          </ul>
+        </SocialMediaNavContainer>
+      </AvatarSocialNavContainer>
     </StyledHeader>
   );
 }
 
+const AvatarSocialNavContainer = styled.div`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin: 0 auto;
+  width: fit-content;
+`;
+
 const Avatar = styled.img`
     border-radius: 50%;
-    margin: 0 0 2rem 4rem;
     width: 18rem;
 `;
 
-const SocialMediaLink = styled.li`
-  display: inline-block;
-
-  &:nth-child(1) {
-    margin: 0 1rem 0 4rem;
-  }
-
-  &:nth-child(2) {
-    margin-right: 1rem;
-  }
-`;
-
 const SocialMediaNavContainer = styled.nav`
-  width: 100%;
+  width: fit-content;
 
   & ul {
+    display: flex;
+    gap: 1rem;
     list-style-type: none;
     margin: 0;
     padding: 0;
+  }
+
+  & li {
+    flex: 0 1 auto;
   }
 `;
 
@@ -78,7 +82,7 @@ const StyledHeader = styled.header`
   background-image: url(${backgroundImage});
   background-repeat: no-repeat;
   background-size: cover;
-  color:rgb(255, 153, 0);
+  color:rgb(250, 183, 83);
   height: 85vh;
   width: 100%;
 
