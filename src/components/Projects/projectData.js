@@ -21,7 +21,9 @@ const descriptions = [
   tempor. Varius congue magna ullamcorper aliquet consectetur faucibus.`
 ];
 
-const PROJECT_DATA = [
+export const PROJECT_TITLES = ["Match Game", "Rotate Cube", "No Dice", "Management App"];
+
+export const PROJECT_DATA = [
   {
     description: descriptions[0],
     imgAlt: "Thumbnail of the match game project",
@@ -30,7 +32,7 @@ const PROJECT_DATA = [
       // video: 
     },
     tech: [TECH_NAMES.html, TECH_NAMES.css, TECH_NAMES.js],
-    title: "Match Game"
+    title: PROJECT_TITLES[0]
   },
   {
     description: descriptions[1],
@@ -40,7 +42,7 @@ const PROJECT_DATA = [
       // video: 
     },
     tech: [TECH_NAMES.html, TECH_NAMES.css, TECH_NAMES.js],
-    title: "Rotate Cube"
+    title: PROJECT_TITLES[1]
   },
   {
     description: descriptions[2],
@@ -50,7 +52,7 @@ const PROJECT_DATA = [
       // video: 
     },
     tech: [TECH_NAMES.html, TECH_NAMES.css, TECH_NAMES.js],
-    title: "No Dice"
+    title: PROJECT_TITLES[2]
   },
   {
     description: descriptions[3],
@@ -60,8 +62,6 @@ const PROJECT_DATA = [
       // video: 
     },
     tech: [TECH_NAMES.html, TECH_NAMES.css, TECH_NAMES.js, TECH_NAMES.react, TECH_NAMES.styled],
-    title: "Management App"
+    title: PROJECT_TITLES[3]
   }
 ];
-
-export default PROJECT_DATA;
