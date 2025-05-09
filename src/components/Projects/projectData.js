@@ -21,7 +21,7 @@ const descriptions = [
   tempor. Varius congue magna ullamcorper aliquet consectetur faucibus.`
 ];
 
-export const PROJECT_TITLES = ["Match Game", "Rotate Cube", "No Dice", "Management App"];
+export const PROJECT_TITLES = ["Match Game", "Rotate Cube", "No Dice", "Task Tracker"];
 
 export const PROJECT_DATA = [
   {

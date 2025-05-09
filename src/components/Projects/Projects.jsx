@@ -50,9 +50,9 @@ export default function Projects() {
             }
           </ul>
         </ProjectNavTabs>
-        {/* <ProjectCard>
+        <ProjectCard>
 
-        </ProjectCard> */}
+        </ProjectCard>
       </MainProject>
     </ProjectSection>
   );
@@ -63,6 +63,10 @@ const MainProject = styled.main`
   flex-direction: column;
   gap: 1rem;
   width: fit-content;
+`;
+
+const ProjectCard = styled.article`
+
 `;
 
 const ProjectNavTabs = styled.nav`
@@ -91,13 +95,28 @@ const NavButton = styled.button`
       else
         return "transparent";
     }};
-    border: none;
-    font-size: clamp(1.6rem, calc(1.2rem + 1vw), 2rem);
-    padding: 1.5rem 0;
-  }
+  border: none;
+  border-bottom: ${props => {
+      if (props.$tabTitle === props.$currentSelected)
+        return ".2rem solid rgb(209, 10, 10)";
+      else
+        return "none";
+    }};
+  border-radius: 1rem 1rem 0 0;
+  color: ${props => {
+      if (props.$tabTitle === props.$currentSelected)
+        return "#fff";
+      else
+        return "#000";
+    }};
+  font-size: clamp(1.6rem, calc(1.2rem + 1vw), 2rem);
+  margin-bottom: -.2rem;
+  min-height: 100%;
+  padding: 1.5rem 0;
+  word-spacing: 50rem;
 
   &:hover {
-    cursor: hover;
+    cursor: pointer;
   }
 `;
 
@@ -113,22 +132,3 @@ const ProjectSection = styled.section`
     align-self: start;
   }
 `;
-
-
-/*
- & button {
-    background-color: ${props => {
-      if (props.$tabTitle === props.$currentSelected)
-        return "#D3D3D3";
-      else
-        return "transparent";
-    }};
-    border: none;
-    font-size: clamp(1.6rem, calc(1.2rem + 1vw), 2rem);
-    padding: 1.5rem 0;
-  }
-
-  & button:hover {
-    cursor: hover;
-  }
-*/
