@@ -1,13 +1,15 @@
-// import MEDIA_SIZES from "../../auxiliary/mediaSizes.js";
-import { PROJECT_DATA, PROJECT_TITLES } from "./projectData.js";
+import ProjectCardImage from "./ProjectCardImage.jsx";
+import { PROJECT_TITLES } from "./projectData.js";
+import { retrieveProject } from "./auxiliaryProjectFuncs.js";
 import { styled } from "styled-components";
 import { useState } from "react";
 
 //TODO: scale card when hovered
-//TODO: add state when card is clicked
 
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(PROJECT_TITLES[0]); // PROJECT_TITLES[0] is a string
+
+  const selectedProjectData = retrieveProject(selectedProject);
   
   function handleTabSelection (event) {
     const innerBtnText = event.target.innerText;
@@ -51,7 +53,21 @@ export default function Projects() {
           </ul>
         </ProjectNavTabs>
         <ProjectCard>
-
+          <h2>{selectedProject}</h2>
+          <p>
+            Link to Project:&nbsp;
+            <a
+              href={selectedProjectData.links.git}
+              target="_blank"
+            >
+              {selectedProject}
+            </a>
+          </p>
+          <ProjectCardImage
+            imgAlt={selectedProjectData.imgAlt}
+            title={selectedProject}
+          />
+          <hr />
         </ProjectCard>
       </MainProject>
     </ProjectSection>
@@ -66,7 +82,21 @@ const MainProject = styled.main`
 `;
 
 const ProjectCard = styled.article`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
 
+  & h2 {
+    margin: 0 auto;
+    width: fit-content;
+  }
+
+  & hr {
+    border: .5rem solid green;
+    border-radius: .5rem;
+    width: 65%;
+  }
 `;
 
 const ProjectNavTabs = styled.nav`

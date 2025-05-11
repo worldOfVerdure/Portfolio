@@ -28,6 +28,8 @@ import managementApp700 from "../../assets/images/projectCard/managementApp/mana
 import managementApp900 from "../../assets/images/projectCard/managementApp/managementApp-900.png";
 import managementApp1200 from "../../assets/images/projectCard/managementApp/managementApp-1200.png";
 
+import { PROJECT_DATA } from "./projectData.js";
+
 export function colorSelector(techName) {
   let backColor, borderColor, textColor;
   switch (techName) {
@@ -106,7 +108,7 @@ export function projectImages (projectTitle) {
         noDice1200
       ];
       break;
-    case "Management App":
+    case "Task Tracker":
       projectImageArray = [
         managementApp,
         managementApp250,
@@ -121,4 +123,19 @@ export function projectImages (projectTitle) {
       console.log("An invalid project title was passed.");
   }
   return projectImageArray;
+}
+
+export function retrieveProject (projectTitle) {
+  switch(projectTitle) {
+    case "Match Game":
+      return PROJECT_DATA[0];
+    case "Rotate Cube":
+      return PROJECT_DATA[1];
+    case "No Dice":
+      return PROJECT_DATA[2];
+    case "Task Tracker":
+      return PROJECT_DATA[3];
+    default :
+      console.log("An invalid project title was passed.");
+  }
 }
