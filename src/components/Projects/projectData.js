@@ -21,6 +21,17 @@ const descriptions = [
   tempor. Varius congue magna ullamcorper aliquet consectetur faucibus.`
 ];
 
+export const TEXT_BOX = [
+  `Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
+  vitaepellentesque sem placerat. In id cursus mi pretium tellus duis convallis.
+  Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum
+  egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class
+  aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.`,
+
+  
+];
+
+export const PROJECT_NAV_TEXT = ["Description", "Learning", "Struggles"];
 export const PROJECT_TITLES = ["Match Game", "Rotate Cube", "No Dice", "Task Tracker"];
 
 export const PROJECT_DATA = [

@@ -1,20 +1,41 @@
+import Description from "./Description.jsx";
 import ProjectCardImage from "./ProjectCardImage.jsx";
-import { PROJECT_TITLES } from "./projectData.js";
-import { retrieveProject } from "./auxiliaryProjectFuncs.js";
+import { PROJECT_NAV_TEXT, PROJECT_TITLES } from "./projectData.js";
+import { retrieveProjectData } from "./auxiliaryProjectFuncs.js";
 import { styled } from "styled-components";
 import { useState } from "react";
 
 //TODO: scale card when hovered
 
 export default function Projects() {
-  const [selectedProject, setSelectedProject] = useState(PROJECT_TITLES[0]); // PROJECT_TITLES[0] is a string
-
-  const selectedProjectData = retrieveProject(selectedProject);
-  
-  function handleTabSelection (event) {
+  // PROJECT_TITLES[0] and PROJECT_NAV_TEXT[0] are both strings.
+  const [selectedNavText, setSelectedNavText] = useState(PROJECT_NAV_TEXT[0]);
+  function handleInnerTabSelection (event) {
     const innerBtnText = event.target.innerText;
 
     switch (innerBtnText) {
+      case PROJECT_NAV_TEXT[0]:
+        setSelectedNavText(PROJECT_NAV_TEXT[0]);
+        break;
+      case PROJECT_NAV_TEXT[1]:
+        setSelectedNavText(PROJECT_NAV_TEXT[1]);
+        break;
+      case PROJECT_NAV_TEXT[2]:
+        setSelectedNavText(PROJECT_NAV_TEXT[2]);
+        break;
+      default:
+        console.log("The inner tab button text doesn't match any existing strings.");
+    }
+  }
+
+  const [selectedProject, setSelectedProject] = useState(PROJECT_TITLES[0]);
+  //Pass the project title as a string, have it returned the data as an object.
+  const selectedProjectData = retrieveProjectData(selectedProject);
+  
+  function handleTabSelection (event) {
+    const btnText = event.target.innerText;
+
+    switch (btnText) {
       case PROJECT_TITLES[0]:
         setSelectedProject(PROJECT_TITLES[0]);
         break;
@@ -32,6 +53,11 @@ export default function Projects() {
     }
   }
 
+  function textBoxSelection (selectedNavText) {
+    if (selectedNavText === "Description")
+      return <Description selectedProject={selectedProject} />
+  }
+
   return (
     <ProjectSection >
       <h2>Projects</h2>
@@ -39,7 +65,7 @@ export default function Projects() {
         <ProjectNavTabs >
           <ul>
             {PROJECT_TITLES.map(title => 
-              <li key={title}>
+              <li key={title} >
                 <NavButton
                   $currentSelected={selectedProject}
                   onClick={handleTabSelection}
@@ -48,14 +74,47 @@ export default function Projects() {
                 >
                   {title}
                 </NavButton>
-              </li>)
-            }
+              </li>
+            )}
           </ul>
         </ProjectNavTabs>
         <ProjectCard>
           <h2>{selectedProject}</h2>
-          <p>
-            Link to Project:&nbsp;
+          <ProjectCardImage
+            imgAlt={selectedProjectData.imgAlt}
+            title={selectedProject}
+          />
+          <hr />
+          <TextSection >
+            <NavText>
+              <ul>
+                {PROJECT_NAV_TEXT.map(innerNavText =>
+                  <li key={innerNavText} >
+                    <NavButton 
+                      $currentSelected={selectedNavText}
+                      onClick={handleInnerTabSelection}
+                      $tabTitle={innerNavText}
+                      type="button"
+                    >
+                      {innerNavText}
+                    </NavButton>
+                  </li>
+                )}
+              </ul>
+            </NavText>
+            <TextBox >
+              { textBoxSelection() }
+            </TextBox>
+          </TextSection>
+        </ProjectCard>
+      </MainProject>
+    </ProjectSection>
+  );
+}
+
+/*
+<p>
+            Github Page:&nbsp;
             <a
               href={selectedProjectData.links.git}
               target="_blank"
@@ -63,18 +122,20 @@ export default function Projects() {
               {selectedProject}
             </a>
           </p>
-          <ProjectCardImage
-            imgAlt={selectedProjectData.imgAlt}
-            title={selectedProject}
-          />
-          <hr />
-        </ProjectCard>
-      </MainProject>
-    </ProjectSection>
-  );
-}
+
+*/
+// const InternalNavButton = styled.button`
+//   background-color: ${ props => {
+//     if (props.$tabTitle === props.$currentSelected)
+//       return "#D3D3D3";
+//     else
+//       return "trans"
+//   }};
+   
+// `;
 
 const MainProject = styled.main`
+  border: .1rem #000 solid;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -93,7 +154,7 @@ const ProjectCard = styled.article`
   }
 
   & hr {
-    border: .5rem solid green;
+    border: .2rem solid green;
     border-radius: .5rem;
     width: 65%;
   }
@@ -119,7 +180,7 @@ const ProjectNavTabs = styled.nav`
 `;
 
 const NavButton = styled.button`
-  background-color: ${props => {
+  background-color: ${ props => {
       if (props.$tabTitle === props.$currentSelected)
         return "#D3D3D3";
       else
@@ -141,7 +202,6 @@ const NavButton = styled.button`
     }};
   font-size: clamp(1.6rem, calc(1.2rem + 1vw), 2rem);
   margin-bottom: -.2rem;
-  min-height: 100%;
   padding: 1.5rem 0;
   word-spacing: 50rem;
 
@@ -150,15 +210,45 @@ const NavButton = styled.button`
   }
 `;
 
-const ProjectSection = styled.section`
+const NavText = styled.nav`
   align-items: center;
+  display: flex;
+
+  & ul {
+    display: flex;
+    gap: 2rem;
+    justify-content: start;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  & li {
+    flex: 1 1 0;
+    text-align: center;
+  }
+`;
+
+const ProjectSection = styled.section`
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  justify-content: center;
   margin-bottom: 2rem;
   width: 90%;
 
   & h2 {
     align-self: start;
   }
+`;
+
+const TextBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+`;
+
+const TextSection = styled.section`
+  
 `;

@@ -119,13 +119,13 @@ export function projectImages (projectTitle) {
         managementApp1200
       ];
       break;
-    default :
+    default:
       console.log("An invalid project title was passed.");
   }
   return projectImageArray;
 }
 
-export function retrieveProject (projectTitle) {
+export function retrieveProjectData (projectTitle) {
   switch(projectTitle) {
     case "Match Game":
       return PROJECT_DATA[0];
@@ -135,7 +135,7 @@ export function retrieveProject (projectTitle) {
       return PROJECT_DATA[2];
     case "Task Tracker":
       return PROJECT_DATA[3];
-    default :
+    default:
       console.log("An invalid project title was passed.");
   }
 }
