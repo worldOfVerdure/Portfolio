@@ -35,8 +35,6 @@ export default function Description({ selectedProject }) {
   );
 }
 
-
-
 const Tech = styled.div`
   background-color: ${props => props.$backColor};
   border: .25rem solid ${props => props.$borderColor};
@@ -73,12 +71,17 @@ const TechStack = styled.section`
 
 const Text = styled.div`
   overflow-y: auto;
+
+  & p {
+    margin: 0;
+    text-align: center;
+  }
 `;
 
 const TextContainer = styled.section`
   max-height: 40vh;
 
   & h3 {
-    margin: 1rem auto;
+    margin: 0;
   }
 `;

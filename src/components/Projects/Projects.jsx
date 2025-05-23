@@ -1,4 +1,5 @@
 import Description from "./Description.jsx";
+import Learnt from "./Learnt.jsx";
 import ProjectCardImage from "./ProjectCardImage.jsx";
 import { PROJECT_NAV_TEXT, PROJECT_TITLES } from "./projectData.js";
 import { retrieveProjectData } from "./auxiliaryProjectFuncs.js";
@@ -79,7 +80,7 @@ export default function Projects() {
             imgAlt={selectedProjectData.imgAlt}
             title={selectedProject}
           />
-          <hr />
+          
           <TextSection >
             <NavText>
               <ul>
@@ -99,7 +100,7 @@ export default function Projects() {
             </NavText>
             <TextBox >
               {selectedNavText === "Description" && <Description selectedProject={selectedProject} />}
-              
+              {selectedNavText === "Learnt" && <Learnt selectedProject={selectedProject} />}
             </TextBox>
           </TextSection>
         </ProjectCard>
@@ -198,7 +199,7 @@ const NavButton = styled.button`
 `;
 
 const NavButtonInner = styled(NavButton)`
-  padding: 1.5rem .4rem;
+  padding: 1rem .6rem;
 `;
 
 const NavText = styled.nav`
@@ -226,7 +227,7 @@ const ProjectSection = styled.section`
   gap: 2rem;
   justify-content: center;
   margin-bottom: 2rem;
-  max-height: 100vh;
+  max-height: 95vh;
   max-width: 90%;
 
   & h2 {
