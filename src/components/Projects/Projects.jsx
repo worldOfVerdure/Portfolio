@@ -29,7 +29,7 @@ export default function Projects() {
   }
 
   const [selectedProject, setSelectedProject] = useState(PROJECT_TITLES[0]);
-  //Pass the project title as a string, have it returned the data as an object.
+  //Pass the project title as a string, have it returned the data object.
   const selectedProjectData = retrieveProjectData(selectedProject);
   
   function handleTabSelection (event) {
@@ -51,11 +51,6 @@ export default function Projects() {
       default:
         console.log("The tab button text doesn't match any existing strings.");
     }
-  }
-
-  function textBoxSelection (selectedNavText) {
-    if (selectedNavText === "Description")
-      return <Description selectedProject={selectedProject} />
   }
 
   return (
@@ -90,20 +85,21 @@ export default function Projects() {
               <ul>
                 {PROJECT_NAV_TEXT.map(innerNavText =>
                   <li key={innerNavText} >
-                    <NavButton 
+                    <NavButtonInner
                       $currentSelected={selectedNavText}
                       onClick={handleInnerTabSelection}
                       $tabTitle={innerNavText}
                       type="button"
                     >
                       {innerNavText}
-                    </NavButton>
+                    </NavButtonInner>
                   </li>
                 )}
               </ul>
             </NavText>
             <TextBox >
-              { textBoxSelection() }
+              {selectedNavText === "Description" && <Description selectedProject={selectedProject} />}
+              
             </TextBox>
           </TextSection>
         </ProjectCard>
@@ -124,15 +120,6 @@ export default function Projects() {
           </p>
 
 */
-// const InternalNavButton = styled.button`
-//   background-color: ${ props => {
-//     if (props.$tabTitle === props.$currentSelected)
-//       return "#D3D3D3";
-//     else
-//       return "trans"
-//   }};
-   
-// `;
 
 const MainProject = styled.main`
   border: .1rem #000 solid;
@@ -210,13 +197,17 @@ const NavButton = styled.button`
   }
 `;
 
+const NavButtonInner = styled(NavButton)`
+  padding: 1.5rem .4rem;
+`;
+
 const NavText = styled.nav`
   align-items: center;
   display: flex;
 
   & ul {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     justify-content: start;
     list-style-type: none;
     margin: 0;
@@ -235,7 +226,8 @@ const ProjectSection = styled.section`
   gap: 2rem;
   justify-content: center;
   margin-bottom: 2rem;
-  width: 90%;
+  max-height: 100vh;
+  max-width: 90%;
 
   & h2 {
     align-self: start;
@@ -250,5 +242,6 @@ const TextBox = styled.div`
 `;
 
 const TextSection = styled.section`
-  
+  margin: 0 auto;
+  max-width: 90%;
 `;

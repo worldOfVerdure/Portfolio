@@ -27,7 +27,6 @@ import managementApp500 from "../../assets/images/projectCard/managementApp/mana
 import managementApp700 from "../../assets/images/projectCard/managementApp/managementApp-700.png";
 import managementApp900 from "../../assets/images/projectCard/managementApp/managementApp-900.png";
 import managementApp1200 from "../../assets/images/projectCard/managementApp/managementApp-1200.png";
-
 import { PROJECT_DATA } from "./projectData.js";
 
 export function colorSelector(techName) {

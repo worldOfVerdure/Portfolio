@@ -1,36 +1,45 @@
-import { colorSelector } from "./auxiliaryProjectFuncs";
-import { PROJECT_DATA } from "./projectData";
+import { colorSelector, retrieveProjectData } from "./auxiliaryProjectFuncs";
 import { styled } from "styled-components";
 
-export default function Description() {
+export default function Description({ selectedProject }) {
+  const selectedProjectData = retrieveProjectData(selectedProject);
   return (
     <>
       <TechStack>
         <h3>Tech Stack</h3>
-        <hr />
         <TechContainer >
-          {PROJECT_DATA.tech.map(techName => {
+          {selectedProjectData.tech.map(techName => {
             const colors = colorSelector(techName);
             return (
-            <Tech
-              $backColor={colors[0]}
-              $borderColor={colors[1]}
-              $textColor={colors[2]}
-              key={`${props.title} ${techName}`}
-            >
-              {techName}
-            </Tech>
+              <Tech
+                $backColor={colors[0]}
+                $borderColor={colors[1]}
+                $textColor={colors[2]}
+                key={`${selectedProjectData.title} ${techName}`}
+              >
+                {techName}
+              </Tech>
             );
           })}
         </TechContainer>
       </TechStack>
+      {/* {This is where we will put the text container} */}
+      <TextContainer >
+        <h3>Project Details</h3>
+        <Text>
+          <p>{selectedProjectData.description}</p>
+        </Text>
+      </TextContainer>
+      
     </>
   );
 }
 
+
+
 const Tech = styled.div`
   background-color: ${props => props.$backColor};
-  border: .4rem solid ${props => props.$borderColor};
+  border: .25rem solid ${props => props.$borderColor};
   border-radius: .8rem;
   color: ${props => props.$textColor};
   display: flex;
@@ -42,11 +51,12 @@ const Tech = styled.div`
 
 const TechContainer = styled.div`
   align-items: center;
+  border: .2rem solid #000;
   display: flex;
   flex-wrap: wrap;
   gap: .8rem;
   justify-content: start;
-  margin-top: 2rem;
+  padding: 0 1rem;
 
   & > * {
     flex: 1 auto;
@@ -54,5 +64,21 @@ const TechContainer = styled.div`
 `;
 
 const TechStack = styled.section`
+  border: .2rem solid #000;
 
+  & h3 {
+    margin: 1rem auto;
+  }
+`;
+
+const Text = styled.div`
+  overflow-y: auto;
+`;
+
+const TextContainer = styled.section`
+  max-height: 40vh;
+
+  & h3 {
+    margin: 1rem auto;
+  }
 `;
