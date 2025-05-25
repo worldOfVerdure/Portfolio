@@ -1,4 +1,4 @@
-import { projectImages } from "./auxiliaryProjectFuncs.js";
+import { projectImages } from "./helpers/auxiliaryProjectFuncs";
 import { styled } from "styled-components";
 
 export default function ProjectCardImage( {imgAlt, title} ) {

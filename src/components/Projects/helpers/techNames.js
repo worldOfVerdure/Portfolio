@@ -4,7 +4,7 @@ const TECH_NAMES = {
   js: "JS",
   react: "React",
   scss: "SCSS",
-  styled: "Styled-Components",
+  styled: "Styled-C",
   ts: "TS"
 };
 

@@ -1,4 +1,5 @@
-import { retrieveProjectData } from "./auxiliaryProjectFuncs.js";
+import Defined from "./Defined.jsx";
+import { retrieveProjectData } from "./helpers/auxiliaryProjectFuncs.js";
 import { styled } from "styled-components";
 
 export default function Learnt({ selectedProject }) {
@@ -6,18 +7,17 @@ export default function Learnt({ selectedProject }) {
   return (
     <LearntIntroContainer >
 
-      <LearntIntro >{selectedProjectData.learnt}</LearntIntro>
+      
     </LearntIntroContainer>
   );
 }
-
-const LearntIntro = styled.p`
-  margin: 0;
-  text-align: center;
-`;
 
 const LearntIntroContainer = styled.section`
   & h3 {
     margin: 0;
   }
+`;
+
+const ListOfLearnings = styled.ul`
+
 `;

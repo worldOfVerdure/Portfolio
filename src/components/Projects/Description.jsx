@@ -1,4 +1,4 @@
-import { colorSelector, retrieveProjectData } from "./auxiliaryProjectFuncs";
+import { colorSelector, retrieveProjectData } from "./helpers/auxiliaryProjectFuncs";
 import { styled } from "styled-components";
 
 export default function Description({ selectedProject }) {
@@ -15,7 +15,7 @@ export default function Description({ selectedProject }) {
                 $backColor={colors[0]}
                 $borderColor={colors[1]}
                 $textColor={colors[2]}
-                key={`${selectedProjectData.title} ${techName}`}
+                key={`${selectedProjectData?.title} ${techName}`}
               >
                 {techName}
               </Tech>
@@ -27,7 +27,7 @@ export default function Description({ selectedProject }) {
       <TextContainer >
         <h3>Project Details</h3>
         <Text>
-          <p>{selectedProjectData.description}</p>
+          <p>{selectedProjectData?.description}</p>
         </Text>
       </TextContainer>
       
@@ -70,7 +70,8 @@ const TechStack = styled.section`
 `;
 
 const Text = styled.div`
-  overflow-y: auto;
+  max-height: 5%;
+  overflow-y: scroll;
 
   & p {
     margin: 0;

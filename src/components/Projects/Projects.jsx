@@ -1,8 +1,8 @@
 import Description from "./Description.jsx";
 import Learnt from "./Learnt.jsx";
 import ProjectCardImage from "./ProjectCardImage.jsx";
-import { PROJECT_NAV_TEXT, PROJECT_TITLES } from "./projectData.js";
-import { retrieveProjectData } from "./auxiliaryProjectFuncs.js";
+import { PROJECT_NAV_TEXT, PROJECT_TITLES } from "./helpers/projectData.js";
+import { retrieveProjectData } from "./helpers/auxiliaryProjectFuncs.js";
 import { styled } from "styled-components";
 import { useState } from "react";
 
@@ -25,7 +25,7 @@ export default function Projects() {
         setSelectedNavText(PROJECT_NAV_TEXT[2]);
         break;
       default:
-        console.log("The inner tab button text doesn't match any existing strings.");
+        throw new Error("Project isn't found.");
     }
   }
 
@@ -199,7 +199,7 @@ const NavButton = styled.button`
 `;
 
 const NavButtonInner = styled(NavButton)`
-  padding: 1rem .6rem;
+  padding: .5rem .6rem;
 `;
 
 const NavText = styled.nav`
