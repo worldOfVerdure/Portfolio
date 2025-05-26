@@ -1,4 +1,4 @@
-export default function Defined({ learntTopic, explanation}) {
+export default function Defined({ learntTopic, explanation }) {
   return (
     <>
       <dt>{learntTopic}</dt>

@@ -1,5 +1,5 @@
 import Description from "./Description.jsx";
-import Learnt from "./Learnt.jsx";
+import LearntStruggles from "./LearntStruggles.jsx";
 import ProjectCardImage from "./ProjectCardImage.jsx";
 import { PROJECT_NAV_TEXT, PROJECT_TITLES } from "./helpers/projectData.js";
 import { retrieveProjectData } from "./helpers/auxiliaryProjectFuncs.js";
@@ -100,7 +100,12 @@ export default function Projects() {
             </NavText>
             <TextBox >
               {selectedNavText === "Description" && <Description selectedProject={selectedProject} />}
-              {selectedNavText === "Learnt" && <Learnt selectedProject={selectedProject} />}
+              {(selectedNavText === "Learnt" || selectedNavText === "Learnt") && 
+                <LearntStruggles
+                  selectedProject={selectedProject}
+                  textType={selectedNavText}
+                />
+              }
             </TextBox>
           </TextSection>
         </ProjectCard>
