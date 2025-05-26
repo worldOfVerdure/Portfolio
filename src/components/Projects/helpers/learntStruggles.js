@@ -1,59 +1,59 @@
 import { PROJECT_TITLES } from "./projectData.js";
 //PROJECT 1 TEXT
 const Project1Learnt = [
-  ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."],
-  ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."],
-  ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."],
-  ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."],
+  ["Index 0 P1", "Learnt about structuring divs and properties to create 3-D effect."],
+  ["Index 1 P1", "Learnt about structuring divs and properties to create 3-D effect."],
+  ["Index 2 P1", "Learnt about structuring divs and properties to create 3-D effect."],
+  ["Index 3 P1", "Learnt about structuring divs and properties to create 3-D effect."]
 ];
 
 const Project1Struggles = [
   ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."],
   ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."],
   ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."],
-  ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."],
+  ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."]
 ];
 //PROJECT 2 TEXT
 const Project2Learnt = [
   ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."],
   ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."],
   ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."],
-  ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."],
+  ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."]
 ];
 
 const Project2Struggles = [
   ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."],
   ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."],
   ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."],
-  ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."],
+  ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."]
 ];
 //PROJECT 3 TEXT
 const Project3Learnt = [
   ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."],
   ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."],
   ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."],
-  ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."],
+  ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."]
 ];
 
 const Project3Struggles = [
   ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."],
   ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."],
   ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."],
-  ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."],
+  ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."]
 ];
 //PROJECT 4 TEXT
 const Project4Learnt = [
-  ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."],
-  ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."],
-  ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."],
-  ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."],
+  ["Index 0 P4", "Learnt about structuring divs and properties to create 3-D effect."],
+  ["Index 0 P4", "Learnt about structuring divs and properties to create 3-D effect."],
+  ["Index 0 P4", "Learnt about structuring divs and properties to create 3-D effect."],
+  ["Index 0 P4", "Learnt about structuring divs and properties to create 3-D effect."]
 ];
 
 const Project4Struggles = [
   ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."],
   ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."],
   ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."],
-  ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."],
+  ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."]
 ];
 
 const Project1LearntStruggles = {

@@ -7,6 +7,12 @@ export default function LearntStruggles({ selectedProject, textType }) {
   const textTypeLowerCase = textType.toLowerCase();
   return (
     <DescriptionLearnList>
+      {/*
+        learntStrugglesArray[index] -> retrieves an object with two
+          fields containing a double array of strings
+        learntStrugglesArray[index][textTypeLowerCase] -> property accessor to select which
+          double array we want 
+      */}
       {learntStrugglesArray[index][textTypeLowerCase].map((innerArray, rowIndex) => {
         <Defined 
           explanation={innerArray[1]}
