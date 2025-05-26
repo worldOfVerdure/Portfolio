@@ -58,36 +58,36 @@ const Project4Struggles = [
 
 const Project1LearntStruggles = {
   projectTitle: `${PROJECT_TITLES[0]}`,
-  learntText: Project1Learnt,
-  strugglesText: Project1Struggles
+  learnt: Project1Learnt,
+  struggles: Project1Struggles
 };
 
 const Project2LearntStruggles = {
   projectTitle: `${PROJECT_TITLES[1]}`,
-  learntText: Project2Learnt,
-  strugglesText: Project2Struggles
+  learnt: Project2Learnt,
+  struggles: Project2Struggles
 };
 
 const Project3LearntStruggles = {
   projectTitle: `${PROJECT_TITLES[2]}`,
-  learntText: Project3Learnt,
-  strugglesText: Project3Struggles
+  learnt: Project3Learnt,
+  struggles: Project3Struggles
 };
 
 const Project4LearntStruggles = {
   projectTitle: `${PROJECT_TITLES[3]}`,
-  learntText: Project4Learnt,
-  strugglesText: Project4Struggles
+  learnt: Project4Learnt,
+  struggles: Project4Struggles
 };
 
-export const ProjectLearntStrugglesArray = [
+export const learntStrugglesArray = [
   Project1LearntStruggles,
   Project2LearntStruggles,
   Project3LearntStruggles,
   Project4LearntStruggles
 ]; 
 //Function returns index of ProjectLearntStrugglesArray
-export function projectLearntStrugglesIndex(projectTitle) {
+export function learntStrugglesIndex(projectTitle) {
   switch(projectTitle) {
     case PROJECT_TITLES[0]:
       return 0;

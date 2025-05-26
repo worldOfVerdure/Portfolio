@@ -1,7 +1,7 @@
-export default function Defined({ learntTopic, explanation }) {
+export default function Defined({ topic, explanation }) {
   return (
     <>
-      <dt>{learntTopic}</dt>
+      <dt>{topic}</dt>
       <dd>{explanation}</dd>
     </>
   );

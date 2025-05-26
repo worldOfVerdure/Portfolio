@@ -100,7 +100,7 @@ export default function Projects() {
             </NavText>
             <TextBox >
               {selectedNavText === "Description" && <Description selectedProject={selectedProject} />}
-              {(selectedNavText === "Learnt" || selectedNavText === "Learnt") && 
+              {(selectedNavText === "Learnt" || selectedNavText === "Struggles") && 
                 <LearntStruggles
                   selectedProject={selectedProject}
                   textType={selectedNavText}
