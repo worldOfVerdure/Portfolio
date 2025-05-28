@@ -1,4 +1,5 @@
 import { colorSelector, retrieveProjectData } from "./helpers/auxiliaryProjectFuncs";
+import ParagraphSplitter from "./ParagraphSplitter.jsx";
 import { styled } from "styled-components";
 
 export default function Description({ selectedProject }) {
@@ -23,11 +24,13 @@ export default function Description({ selectedProject }) {
           })}
         </TechContainer>
       </TechStack>
-      {/* {This is where we will put the text container} */}
       <TextContainer >
         <h3>Project Details</h3>
         <Text>
-          <p>{selectedProjectData?.description}</p>
+          <ParagraphSplitter 
+            mapKey={selectedProject?.title}
+            paragraphs={selectedProjectData?.description}
+          />
         </Text>
       </TextContainer>
       
@@ -70,17 +73,17 @@ const TechStack = styled.section`
 `;
 
 const Text = styled.div`
-  max-height: 5%;
-  overflow-y: scroll;
+  max-height: 20rem;
+  overflow-y: auto;
 
   & p {
     margin: 0;
-    text-align: center;
+    text-align: start;
   }
 `;
 
 const TextContainer = styled.section`
-  max-height: 40vh;
+  min-height: 25vh;
 
   & h3 {
     margin: 0;

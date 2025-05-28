@@ -1,5 +1,6 @@
 import Description from "./Description.jsx";
 import LearntStruggles from "./LearntStruggles.jsx";
+import LinkToProject from "./LinkToProject.jsx";
 import ProjectCardImage from "./ProjectCardImage.jsx";
 import { PROJECT_NAV_TEXT, PROJECT_TITLES } from "./helpers/projectData.js";
 import { retrieveProjectData } from "./helpers/auxiliaryProjectFuncs.js";
@@ -108,24 +109,12 @@ export default function Projects() {
               }
             </TextBox>
           </TextSection>
+          <LinkToProject selectedProjectData={selectedProjectData} />
         </ProjectCard>
       </MainProject>
     </ProjectSection>
   );
 }
-
-/*
-<p>
-            Github Page:&nbsp;
-            <a
-              href={selectedProjectData.links.git}
-              target="_blank"
-            >
-              {selectedProject}
-            </a>
-          </p>
-
-*/
 
 const MainProject = styled.main`
   border: .1rem #000 solid;
@@ -144,12 +133,6 @@ const ProjectCard = styled.article`
   & h2 {
     margin: 0 auto;
     width: fit-content;
-  }
-
-  & hr {
-    border: .2rem solid green;
-    border-radius: .5rem;
-    width: 65%;
   }
 `;
 

@@ -1,6 +1,5 @@
 import backgroundImage from "../../assets/images/header/headerBackground.png";
 import githubIcon from "../../assets/images/socialMediaIcons/github.svg";
-import instagramIcon from "../../assets/images/socialMediaIcons/instagram.svg";
 import linkedinIcon from "../../assets/images/socialMediaIcons/linkedin.svg";
 import profilePic from "../../assets/images/header/profilePic-s.jpg";
 import SocialMediaAnchor from "./SocialMediaAnchor.jsx";
@@ -20,13 +19,6 @@ export default function Header() {
         <Avatar src={profilePic} alt="Picture of the webpage author." />
         <SocialMediaNavContainer>
           <ul>
-            <li>
-              <SocialMediaAnchor 
-                imgAlt="The Instagram icon"
-                imgSrc={instagramIcon}
-                link="https://www.instagram.com/fueled_by_decaf/"
-              />
-            </li>
             <li>
               <SocialMediaAnchor 
                 imgAlt="The Linkedin icon"

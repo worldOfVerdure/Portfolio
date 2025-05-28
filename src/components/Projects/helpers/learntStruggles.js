@@ -1,17 +1,22 @@
 import { PROJECT_TITLES } from "./projectData.js";
 //PROJECT 1 TEXT
 const Project1Learnt = [
-  ["Index 0 P1", "Learnt about structuring divs and properties to create 3-D effect."],
-  ["Index 1 P1", "Learnt about structuring divs and properties to create 3-D effect."],
-  ["Index 2 P1", "Learnt about structuring divs and properties to create 3-D effect."],
-  ["Index 3 P1", "Learnt about structuring divs and properties to create 3-D effect."]
+  ["Responsive Images", "Utilized srcset and sizes HTML attributes to serve a more appropriately sized image"],
+  ["Timers", "Using the asynchronous setInterval() to execute a callback with a short delay"],
+  ["3d Transformations", "Utilized absolute positioning, and the backface-visibility CSS property to create flipping card effects"],
+  ["Select Element", "First time working with a select element and the change event"]
 ];
 
 const Project1Struggles = [
-  ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."],
-  ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."],
-  ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."],
-  ["3-D CSS", "Learnt about structuring divs and properties to create 3-D effect."]
+  ["Managing Game Data", `At first, all the various variables and methods was challenging to keep track
+    of. I implemented and instantiated two classes to have objects for the game and timer data.
+    Resetting the game became trivial with instantiating a new object, relying on the garbage
+    collector to avoid memory leaks.`],
+  ["Backface-Visibility", `Before I knew of this property, the card with higher precedence in the
+    stacking context would flip with the card with the lower precedence, yet the higher precedence
+    was still rendering. When this property was set to "hidden", the backface of the higher
+    precedence was hidden away.`]
+  
 ];
 //PROJECT 2 TEXT
 const Project2Learnt = [
