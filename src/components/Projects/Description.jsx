@@ -91,6 +91,6 @@ const TextContainer = styled.section`
   min-height: 25vh;
 
   & h3 {
-    margin: 0;
+    margin: 0 0 1rem 0;
   }
 `;

@@ -155,6 +155,20 @@ const ProjectNavTabs = styled.nav`
   }
 `;
 
+const ProjectSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 4rem;
+  // max-height: 95vh;
+  max-width: 90%;
+
+  & h2 {
+    align-self: start;
+  }
+`;
+
 const NavButton = styled.button`
   background-color: ${ props => {
       if (props.$tabTitle === props.$currentSelected)
@@ -195,6 +209,7 @@ const NavText = styled.nav`
   border: .2rem solid #000;
   border-radius: .4rem;
   display: flex;
+  justify-content: center;
 
   & ul {
     display: flex;
@@ -208,20 +223,6 @@ const NavText = styled.nav`
   & li {
     flex: 1 1 0;
     text-align: center;
-  }
-`;
-
-const ProjectSection = styled.section`
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  justify-content: center;
-  margin-bottom: 4rem;
-  max-height: 95vh;
-  max-width: 90%;
-
-  & h2 {
-    align-self: start;
   }
 `;
 
