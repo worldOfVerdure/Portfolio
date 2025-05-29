@@ -20,10 +20,19 @@ export default function LearntStruggles({ selectedProject, textType }) {
 }
 
 const DescriptionLearnList = styled.dl`
-  max-height: 20rem;
+  max-height: 25rem;
   overflow-y: auto;
 
-  & dt, dd {
-    // margin-left: 2rem;
+  & dd {
+    line-height: 1.3;
+    margin-bottom: 1rem;
+  }
+
+  & dd:last-child {
+    margin-bottom: 0;
+  }
+
+  dt {
+    margin-bottom: .5rem;
   }
 `;

@@ -3,8 +3,8 @@ const descriptions = [
     `This project was completed after the Rotate Cube project with a continuation of exploring the CSS
   perspective property and 3d transformations. There was an initial challenege of getting the front
   and back cards to rotate seemlessly about the y-axis. Realizing that I could take both cards
-  out of their respective flow with absolute potioning and with the CSS property backface-visibility
-  hiding the back of a 3d transformed object, I found my soluition.`,
+  out of their respective flow with absolute potioning and with the CSS property backface-visibility,
+  hiding the back of a 3d transformed object, I found my solution.`,
 
   `The Match Game was also my first implementation of a timer. To build this, I used the
   asynchronous Window method, setInterval. Being a project dealing with many images, I became

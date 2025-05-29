@@ -14,4 +14,5 @@ export default function LinkToProject({ selectedProjectData }) {
 
 const ProjectLink = styled.a`
   text-decoration: none;
+  margin: 1rem 0;
 `;

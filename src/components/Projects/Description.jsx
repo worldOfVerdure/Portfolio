@@ -51,7 +51,7 @@ const Tech = styled.div`
 
 const TechContainer = styled.div`
   align-items: center;
-  border: .2rem solid #000;
+  // border: .2rem solid #000;
   display: flex;
   flex-wrap: wrap;
   gap: .8rem;
@@ -64,7 +64,7 @@ const TechContainer = styled.div`
 `;
 
 const TechStack = styled.section`
-  border: .2rem solid #000;
+  // border: .2rem solid #000;
 
   & h3 {
     margin: 1rem auto;
@@ -72,12 +72,18 @@ const TechStack = styled.section`
 `;
 
 const Text = styled.div`
-  max-height: 20rem;
+  max-height: 25rem;
   overflow-y: auto;
 
   & p {
-    margin: 0;
+    line-height: 1.5;
+    margin: 0 0 1rem 0;
     text-align: start;
+    text-indent: 10%;
+  }
+
+  & p:last-child {
+    margin: 0;
   }
 `;
 

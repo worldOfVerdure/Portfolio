@@ -1,6 +1,11 @@
 import { PROJECT_TITLES } from "./projectData.js";
 //PROJECT 1 TEXT
 const Project1Learnt = [
+  ["Fisher-Yates Shuffle", `Also called the Knuth sort, this shuffle randomizes an array by having a
+    pointer at the last index, i, of the array and generating a random value between 0 and i - 1.
+    The random value points to another index, j. The values of i and j are swapped, and we decrement
+    the i index. Considering everything after i sorted, we continue the algorithim until i=0. The 
+    runtime and spacetime complexity being linear: O(n).`],
   ["Responsive Images", `The HTML attributes srcset and sizes allowed me to serve more appropriately
     sized images. Thus reducing the file size required when requesting the images.`],
   ["Timer", `By using the asynchronous setInterval() to execute a callback with a short delay, I was

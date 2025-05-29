@@ -76,11 +76,11 @@ export default function Projects() {
         </ProjectNavTabs>
         <ProjectCard>
           <h2>{selectedProject}</h2>
+          <LinkToProject selectedProjectData={selectedProjectData} />
           <ProjectCardImage
             imgAlt={selectedProjectData.imgAlt}
             title={selectedProject}
-          />
-          
+          /> 
           <TextSection >
             <NavText>
               <ul>
@@ -110,7 +110,6 @@ export default function Projects() {
               }
             </TextBox>
           </TextSection>
-          <LinkToProject selectedProjectData={selectedProjectData} />
         </ProjectCard>
       </MainProject>
     </ProjectSection>
@@ -193,6 +192,8 @@ const NavButtonInner = styled(NavButton)`
 
 const NavText = styled.nav`
   align-items: center;
+  border: .2rem solid #000;
+  border-radius: .4rem;
   display: flex;
 
   & ul {
@@ -215,7 +216,7 @@ const ProjectSection = styled.section`
   flex-direction: column;
   gap: 2rem;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   max-height: 95vh;
   max-width: 90%;
 
