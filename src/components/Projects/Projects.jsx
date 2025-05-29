@@ -14,7 +14,6 @@ export default function Projects() {
   const [selectedNavText, setSelectedNavText] = useState(PROJECT_NAV_TEXT[0]);
   function handleInnerTabSelection (event) {
     const innerBtnText = event.target.innerText;
-
     switch (innerBtnText) {
       case PROJECT_NAV_TEXT[0]:
         setSelectedNavText(PROJECT_NAV_TEXT[0]);
@@ -26,7 +25,7 @@ export default function Projects() {
         setSelectedNavText(PROJECT_NAV_TEXT[2]);
         break;
       default:
-        throw new Error("Project isn't found.");
+        throw new Error("Project wasn't found.");
     }
   }
 
@@ -51,7 +50,7 @@ export default function Projects() {
         setSelectedProject(PROJECT_TITLES[3]);
         break;
       default:
-        console.log("The tab button text doesn't match any existing strings.");
+        throw new Error("The tab button text doesn't match any existing strings.");
     }
   }
 
@@ -100,7 +99,9 @@ export default function Projects() {
               </ul>
             </NavText>
             <TextBox >
-              {selectedNavText === "Description" && <Description selectedProject={selectedProject} />}
+              {selectedNavText === "Description" && 
+                <Description selectedProject={selectedProject} />
+              }
               {(selectedNavText === "Learnt" || selectedNavText === "Struggles") && 
                 <LearntStruggles
                   selectedProject={selectedProject}

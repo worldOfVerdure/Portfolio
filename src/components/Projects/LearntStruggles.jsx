@@ -6,7 +6,7 @@ export default function LearntStruggles({ selectedProject, textType }) {
   const index = learntStrugglesIndex(selectedProject);
   const textTypeLowerCase = textType.toLowerCase();
   return (
-    <DescriptionLearnList>
+    <DescriptionLearnList >
       {learntStrugglesArray[index][textTypeLowerCase].map((innerArray, rowIndex) => 
         <Defined 
           explanation={innerArray[1]}

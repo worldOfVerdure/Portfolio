@@ -26,14 +26,13 @@ export default function Description({ selectedProject }) {
       </TechStack>
       <TextContainer >
         <h3>Project Details</h3>
-        <Text>
+        <Text >
           <ParagraphSplitter 
             mapKey={selectedProject?.title}
             paragraphs={selectedProjectData?.description}
           />
         </Text>
       </TextContainer>
-      
     </>
   );
 }

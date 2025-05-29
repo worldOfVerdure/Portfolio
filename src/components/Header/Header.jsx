@@ -59,7 +59,7 @@ const SocialMediaNavContainer = styled.nav`
 
   & ul {
     display: flex;
-    gap: 1rem;
+    gap: 2.5rem;
     list-style-type: none;
     margin: 0;
     padding: 0;
