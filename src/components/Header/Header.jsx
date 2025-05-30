@@ -1,3 +1,4 @@
+import Avatar from "./Avatar.jsx";
 import backgroundImage from "../../assets/images/header/headerBackground.png";
 import { styled } from "styled-components";
 
@@ -11,6 +12,7 @@ export default function Header() {
         <pre>{h1GreetingsText}</pre>
         <pre>{h1NameText}</pre>
       </h1>
+      {/* <Avatar /> */}
     </StyledHeader>
   );
 }
