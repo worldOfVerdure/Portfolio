@@ -161,7 +161,6 @@ const ProjectSection = styled.section`
   gap: 2rem;
   justify-content: center;
   margin-bottom: 4rem;
-  // max-height: 95vh;
   max-width: 90%;
 
   & h2 {

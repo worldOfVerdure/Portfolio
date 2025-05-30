@@ -1,8 +1,4 @@
 import backgroundImage from "../../assets/images/header/headerBackground.png";
-import githubIcon from "../../assets/images/socialMediaIcons/github.svg";
-import linkedinIcon from "../../assets/images/socialMediaIcons/linkedin.svg";
-import profilePic from "../../assets/images/header/profilePic-s.jpg";
-import SocialMediaAnchor from "./SocialMediaAnchor.jsx";
 import { styled } from "styled-components";
 
 export default function Header() {
@@ -15,67 +11,16 @@ export default function Header() {
         <pre>{h1GreetingsText}</pre>
         <pre>{h1NameText}</pre>
       </h1>
-      <AvatarSocialNavContainer>
-        <Avatar src={profilePic} alt="Picture of the webpage author." />
-        <SocialMediaNavContainer>
-          <ul>
-            <li>
-              <SocialMediaAnchor 
-                imgAlt="The Linkedin icon"
-                imgSrc={linkedinIcon}
-                link="https://www.linkedin.com/in/andrew-chupka/"
-              />
-            </li>
-            <li>
-              <SocialMediaAnchor 
-                imgAlt="The Github icon"
-                imgSrc={githubIcon}
-                link="https://github.com/worldOfVerdure"
-              />
-            </li>
-          </ul>
-        </SocialMediaNavContainer>
-      </AvatarSocialNavContainer>
     </StyledHeader>
   );
 }
-
-const AvatarSocialNavContainer = styled.div`
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-  margin: 0 auto;
-  width: fit-content;
-`;
-
-const Avatar = styled.img`
-    border-radius: 50%;
-    width: 18rem;
-`;
-
-const SocialMediaNavContainer = styled.nav`
-  width: fit-content;
-
-  & ul {
-    display: flex;
-    gap: 2.5rem;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  & li {
-    flex: 0 1 auto;
-  }
-`;
 
 const StyledHeader = styled.header`
   background-image: url(${backgroundImage});
   background-repeat: no-repeat;
   background-size: cover;
   color:rgb(250, 183, 83);
-  height: 85vh;
+  height: 40vh;
   width: 100%;
 
   & h1 {

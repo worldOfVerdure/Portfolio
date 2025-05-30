@@ -1,5 +1,4 @@
 import * as aboutMeText from "./aboutMeText.js";
-import MEDIA_SIZES from "../../auxiliary/mediaSizes.js";
 import { styled } from "styled-components";
 
 export default function About() {
@@ -27,17 +26,9 @@ const AboutSection = styled.section`
   }
 `;
 
-const AboutTextContainer = styled.div`
-
-`;
-
 const P = styled.p`
   font-size: clamp(1.6rem, calc(1.2rem + 1vw), 2rem);
   line-height: 1.4;
   margin: 1.5rem auto;
   white-space: pre-wrap;
-
-  // @media(min-width: ${MEDIA_SIZES.laptopL}) {
-  //   width: 65%;
-  // }
 `;

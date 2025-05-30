@@ -1,4 +1,5 @@
 import About from "./components/About/About.jsx";
+import ContactMe from "./components/Contact/ContactMe.jsx";
 import { createGlobalStyle, styled } from "styled-components";
 import Header from "./components/Header/Header.jsx";
 import Projects from "./components/Projects/Projects.jsx";
@@ -11,6 +12,7 @@ export default function App() {
         <Header />
         <About />
         <Projects />
+        <ContactMe />
       </EntireContainer>
     </>
   );
