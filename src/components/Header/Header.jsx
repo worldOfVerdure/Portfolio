@@ -12,7 +12,7 @@ export default function Header() {
         <pre>{h1GreetingsText}</pre>
         <pre>{h1NameText}</pre>
       </h1>
-      {/* <Avatar /> */}
+      <Avatar />
     </StyledHeader>
   );
 }
@@ -22,7 +22,7 @@ const StyledHeader = styled.header`
   background-repeat: no-repeat;
   background-size: cover;
   color:rgb(250, 183, 83);
-  height: 40vh;
+  height: 50vh;
   width: 100%;
 
   & h1 {

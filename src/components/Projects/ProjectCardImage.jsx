@@ -8,7 +8,7 @@ export default function ProjectCardImage( {imgAlt, title} ) {
     <ProjectImage
         alt={imgAlt}
         sizes="
-          (max-width: 325px) 250px,
+          (max-width: 320px) 250px,
           (max-width: 425px) 300px,
           (max-width: 600px) 500px,
           (max-width: 950px) 700px,
