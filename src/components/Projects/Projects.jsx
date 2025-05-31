@@ -5,6 +5,7 @@ import ProjectCardImage from "./ProjectCardImage.jsx";
 import { PROJECT_NAV_TEXT, PROJECT_TITLES } from "./helpers/projectData.js";
 import { retrieveProjectData } from "./helpers/auxiliaryProjectFuncs.js";
 import { styled } from "styled-components";
+import TechStack from "./TechStack.jsx";
 import { useState } from "react";
 
 //TODO: scale card when hovered
@@ -98,6 +99,7 @@ export default function Projects() {
                 )}
               </ul>
             </NavText>
+            <TechStack selectedProject={selectedProject} />
             <TextBox >
               {selectedNavText === "Description" && 
                 <Description selectedProject={selectedProject} />
@@ -209,6 +211,9 @@ const NavText = styled.nav`
   border-bottom: .2rem solid #000;
   display: flex;
   justify-content: center;
+  margin: 0 auto;
+  max-width: 40rem;
+  width: 80%;
 
   & ul {
     display: flex;
@@ -229,7 +234,6 @@ const NavText = styled.nav`
 const TextBox = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   justify-content: center;
 `;
 

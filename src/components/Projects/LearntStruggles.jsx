@@ -6,16 +6,19 @@ export default function LearntStruggles({ selectedProject, textType }) {
   const index = learntStrugglesIndex(selectedProject);
   const textTypeLowerCase = textType.toLowerCase();
   return (
-    <DescriptionLearnList >
-      {learntStrugglesArray[index][textTypeLowerCase].map((innerArray, rowIndex) => 
-        <Defined 
-          explanation={innerArray[1]}
-          key={rowIndex}
-          topic={innerArray[0]}
-        />
-        )
-      }
-    </DescriptionLearnList>
+    <LearntStrugglesContainer >
+      {textType === "Learnt" ? <h3>What I learned</h3> : <h3>Struggles Overcame</h3>}
+      <DescriptionLearnList >
+        {learntStrugglesArray[index][textTypeLowerCase].map((innerArray, rowIndex) => 
+          <Defined 
+            explanation={innerArray[1]}
+            key={`${selectedProject} ${textType} ${rowIndex}`}
+            topic={innerArray[0]}
+          />
+          )
+        }
+      </DescriptionLearnList>
+    </LearntStrugglesContainer>
   );
 }
 
@@ -34,5 +37,15 @@ const DescriptionLearnList = styled.dl`
 
   dt {
     margin-bottom: .5rem;
+  }
+
+  dt::after {
+    content: ":";
+  }
+`;
+
+const LearntStrugglesContainer = styled.div`
+   & h3 {
+    margin: 0 0 1.5rem 0;
   }
 `;
