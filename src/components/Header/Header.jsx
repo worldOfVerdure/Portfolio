@@ -22,7 +22,7 @@ const StyledHeader = styled.header`
   background-repeat: no-repeat;
   background-size: cover;
   color:rgb(250, 183, 83);
-  height: 50vh;
+  height: 40vh;
   width: 100%;
 
   & h1 {

@@ -205,8 +205,8 @@ const NavButtonInner = styled(NavButton)`
 
 const NavText = styled.nav`
   align-items: center;
-  border: .2rem solid #000;
-  border-radius: .4rem;
+  border: none;
+  border-bottom: .2rem solid #000;
   display: flex;
   justify-content: center;
 
@@ -217,6 +217,7 @@ const NavText = styled.nav`
     list-style-type: none;
     margin: 0;
     padding: 0;
+    width: 100%;
   }
 
   & li {

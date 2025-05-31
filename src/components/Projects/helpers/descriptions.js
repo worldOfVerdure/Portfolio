@@ -13,9 +13,7 @@ const descriptions = [
   client's pixel density to serve the most appropriate image from the selection I offered.`,
 
   `My favorite highlight of this project was getting to implement a Knuth sort to acheive the fatest
-  runtime for randomly sorting an array of images with a O(n). I chose frontend as a means of seeing
-  what I was building. Getting to utilize the computer science I had learnt from my time in college
-  was thrilling for me.`
+  runtime for randomly sorting an array of images with a O(n).`
   ],
   [
     `The Rotate Cube project was inspired after reading from multiple sources on the capabilities of
@@ -34,15 +32,15 @@ const descriptions = [
     using the built in document interface to access elements in the DOM tree and deliver the correct
     dice image (1-6) as well as compare the scores, with highest winning.`,
 
-    `While the project taught me the objectives, I want to push myself with something slightly more
+    `While the project taught me the objectives, I wanted to push myself with something slightly more
     complex; hence, No Dice. The project became a game where players tried to get as close to 21 as
     possible with the ability to hold. Thus different scenarios of player scores and when they hold
     needed to be considered.`,
 
     `Unfortunately, this was one of my first projects, and in my eagerness I didn't start with
     drawing designs nor flow charts for the logic. I ended up with code that constantly needed
-    logical bugfixes. I was happy that after some months taking a break from this, i was able to
-    comeback with more experience and fresh eyes, and drew out the flow of logic and cleaned all the
+    logical bugfixes. I was happy that after some months taking a break from this, I was able to
+    come back with more experience and fresh eyes, and drew out the flow of logic and cleaned all the
     bugs.`
   ],
   [

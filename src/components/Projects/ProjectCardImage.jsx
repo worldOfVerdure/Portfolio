@@ -30,6 +30,7 @@ export default function ProjectCardImage( {imgAlt, title} ) {
 
 const ProjectImage = styled.img`
   border-radius: .6rem;
-  max-width: 60rem;
+  margin-bottom: 1rem;
+  max-width: 40rem;
   width: 80%;
 `;

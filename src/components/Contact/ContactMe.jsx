@@ -1,3 +1,4 @@
+import instagramIcon from "../../assets/images/socialMediaIcons/instagram.svg";
 import linkedinIcon from "../../assets/images/socialMediaIcons/linkedin.svg";
 import githubIcon from "../../assets/images/socialMediaIcons/github.svg";
 import SocialMediaAnchor from "./SocialMediaAnchor.jsx";
@@ -16,6 +17,13 @@ export default function ContactMe() {
             <h3>Social Media</h3>
             <nav>
               <ul>
+                <li>
+                  <SocialMediaAnchor
+                    imgAlt="The Instagram icon"
+                    imgSrc={instagramIcon}
+                    link="https://www.instagram.com/fueled_by_decaf/"
+                  />
+                </li>
                 <li>
                   <SocialMediaAnchor
                     imgAlt="The Linkedin icon"
