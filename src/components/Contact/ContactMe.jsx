@@ -51,6 +51,7 @@ const ContactAddress = styled.address`
   align-items: center;
   display: flex;
   flex-direction: column;
+  margin-left: 2rem;
 
   & ul {
     list-style-type: none;
@@ -67,7 +68,15 @@ const ContactAddress = styled.address`
 `;
 
 const ContactFooter = styled.footer`
+  align-items: start;
+  display: flex;
+  flex-direction: column;
   width: 90vw;
+
+  @media (min-width: 500px) {
+    margin: 0 auto;
+    width: fit-content;
+  }
 `;
 
 const SocialMediaContainer = styled.li` 

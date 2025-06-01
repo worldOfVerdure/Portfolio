@@ -1,5 +1,5 @@
 import Description from "./Description.jsx";
-import LearntStruggles from "./LearntStruggles.jsx";
+import LearnedStruggles from "./LearnedStruggles.jsx";
 import LinkToProject from "./LinkToProject.jsx";
 import ProjectCardImage from "./ProjectCardImage.jsx";
 import { PROJECT_NAV_TEXT, PROJECT_TITLES } from "./helpers/projectData.js";
@@ -104,8 +104,8 @@ export default function Projects() {
               {selectedNavText === "Description" && 
                 <Description selectedProject={selectedProject} />
               }
-              {(selectedNavText === "Learnt" || selectedNavText === "Struggles") && 
-                <LearntStruggles
+              {(selectedNavText === "Learned" || selectedNavText === "Struggles") && 
+                <LearnedStruggles
                   selectedProject={selectedProject}
                   textType={selectedNavText}
                 />
@@ -163,7 +163,8 @@ const ProjectSection = styled.section`
   gap: 2rem;
   justify-content: center;
   margin-bottom: 4rem;
-  max-width: 90%;
+  max-width: 60rem;
+  width: 90%;
 
   & h2 {
     align-self: start;
@@ -173,7 +174,7 @@ const ProjectSection = styled.section`
 const NavButton = styled.button`
   background-color: ${ props => {
       if (props.$tabTitle === props.$currentSelected)
-        return "#D3D3D3";
+        return "rgb(102, 102, 102)";
       else
         return "transparent";
     }};
@@ -194,6 +195,7 @@ const NavButton = styled.button`
   font-size: clamp(1.6rem, calc(1.2rem + 1vw), 2rem);
   margin-bottom: -.2rem;
   padding: 1.5rem 0;
+  width: 100%;
   word-spacing: 50rem;
 
   &:hover {
@@ -213,12 +215,12 @@ const NavText = styled.nav`
   justify-content: center;
   margin: 0 auto;
   max-width: 40rem;
-  width: 80%;
+  width: 95%;
 
   & ul {
     display: flex;
     gap: 1rem;
-    justify-content: start;
+    justify-content: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -228,6 +230,7 @@ const NavText = styled.nav`
   & li {
     flex: 1 1 0;
     text-align: center;
+    width: 100%;
   }
 `;
 

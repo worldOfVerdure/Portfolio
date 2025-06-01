@@ -1,15 +1,15 @@
 import Defined from "./Defined.jsx";
-import { learntStrugglesArray, learntStrugglesIndex } from "./helpers/learntStruggles.js";
+import { learnedStrugglesArray, learnedStrugglesIndex } from "./helpers/learnedStruggles.js";
 import { styled } from "styled-components";
 
-export default function LearntStruggles({ selectedProject, textType }) {
-  const index = learntStrugglesIndex(selectedProject);
+export default function LearnedStruggles({ selectedProject, textType }) {
+  const index = learnedStrugglesIndex(selectedProject);
   const textTypeLowerCase = textType.toLowerCase();
   return (
-    <LearntStrugglesContainer >
+    <LearnedStrugglesContainer >
       {textType === "Learnt" ? <h3>What I learned</h3> : <h3>Struggles Overcame</h3>}
       <DescriptionLearnList >
-        {learntStrugglesArray[index][textTypeLowerCase].map((innerArray, rowIndex) => 
+        {learnedStrugglesArray[index][textTypeLowerCase].map((innerArray, rowIndex) => 
           <Defined 
             explanation={innerArray[1]}
             key={`${selectedProject} ${textType} ${rowIndex}`}
@@ -18,7 +18,7 @@ export default function LearntStruggles({ selectedProject, textType }) {
           )
         }
       </DescriptionLearnList>
-    </LearntStrugglesContainer>
+    </LearnedStrugglesContainer>
   );
 }
 
@@ -44,7 +44,7 @@ const DescriptionLearnList = styled.dl`
   }
 `;
 
-const LearntStrugglesContainer = styled.div`
+const LearnedStrugglesContainer = styled.div`
    & h3 {
     margin: 0 0 1.5rem 0;
   }

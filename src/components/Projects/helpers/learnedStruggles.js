@@ -1,6 +1,6 @@
 import { PROJECT_TITLES } from "./projectData.js";
 //PROJECT 1 TEXT
-const Project1Learnt = [
+const Project1Learned = [
   ["Fisher-Yates Shuffle", `Also called the Knuth sort, this shuffle randomizes an array by having a
     pointer at the last index, i, of the array and generating a random value between 0 and i - 1.
     The random value points to another index, j. The values of i and j are swapped, and we decrement
@@ -12,7 +12,7 @@ const Project1Learnt = [
     able render a working timer with a delay of 25ms.`],
   ["3-D Transformations", `Utilized absolute positioning, and the backface-visibility CSS property
     to create flipping card effects.`],
-  ["Select Element", `Learnt about styling and implementing the select element as well as add the
+  ["Select Element", `Learned about styling and implementing the select element as well as add the
     change event as a listener to build the game.`]
 ];
 
@@ -28,7 +28,7 @@ const Project1Struggles = [
   
 ];
 //PROJECT 2 TEXT
-const Project2Learnt = [
+const Project2Learned = [
   ["3-D Transforms", `By using a combination of the rotate() and translate() CSS methods, I was able
     to move the facets of the cube, relative to the perspective of their scene container.`],
   ["Various Input Fields", `The different types of inputs utilized being range, radio and checkbox
@@ -47,7 +47,7 @@ const Project2Struggles = [
     have a perspective property; thus, giving the facets the ability to transform in 3-D space.`]
 ];
 //PROJECT 3 TEXT
-const Project3Learnt = [
+const Project3Learned = [
   ["Improved w/ Flexbox", `This project was the first for me that required that I had flex
     containers nested. Some of these containers even had different flex-directions: a flex-direction
     of column containing flex-directions of row.`],
@@ -66,12 +66,12 @@ const Project3Struggles = [
     doing this, implementation became easier.`]
 ];
 //PROJECT 4 TEXT
-const Project4Learnt = [
+const Project4Learned = [
   ["Lifting State", `The need arises to pass state variables as props to common siblings. However,
     if a state variable was written inside one of the siblings when it should be shared, this state
     needs to be lifted to the common parent. Doing so will help keep code DRY and more
     manageable.`],
-  ["Using Modals", `I learnt of using the dialog as a modal from a side project. I wanted to include
+  ["Using Modals", `I learned of using the dialog as a modal from a side project. I wanted to include
     a modal to give users more confirmation so if they misclicked or changed their mind, they
     wouldn't lose the text they wrote.`],
   ["Transient Props", `I built this with Styled Components and made use of transient props which
@@ -87,38 +87,38 @@ const Project4Struggles = [
     entered.`]
 ];
 
-const Project1LearntStruggles = {
+const Project1LearnedStruggles = {
   projectTitle: `${PROJECT_TITLES[0]}`,
-  learnt: Project1Learnt,
+  learned: Project1Learned,
   struggles: Project1Struggles
 };
 
-const Project2LearntStruggles = {
+const Project2LearnedStruggles = {
   projectTitle: `${PROJECT_TITLES[1]}`,
-  learnt: Project2Learnt,
+  learned: Project2Learned,
   struggles: Project2Struggles
 };
 
-const Project3LearntStruggles = {
+const Project3LearnedStruggles = {
   projectTitle: `${PROJECT_TITLES[2]}`,
-  learnt: Project3Learnt,
+  learned: Project3Learned,
   struggles: Project3Struggles
 };
 
-const Project4LearntStruggles = {
+const Project4LearnedStruggles = {
   projectTitle: `${PROJECT_TITLES[3]}`,
-  learnt: Project4Learnt,
+  learned: Project4Learned,
   struggles: Project4Struggles
 };
 
-export const learntStrugglesArray = [
-  Project1LearntStruggles,
-  Project2LearntStruggles,
-  Project3LearntStruggles,
-  Project4LearntStruggles
+export const learnedStrugglesArray = [
+  Project1LearnedStruggles,
+  Project2LearnedStruggles,
+  Project3LearnedStruggles,
+  Project4LearnedStruggles
 ]; 
 //Function returns index of ProjectLearntStrugglesArray
-export function learntStrugglesIndex(projectTitle) {
+export function learnedStrugglesIndex(projectTitle) {
   switch(projectTitle) {
     case PROJECT_TITLES[0]:
       return 0;

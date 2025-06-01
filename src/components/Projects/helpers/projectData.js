@@ -1,7 +1,7 @@
 import descriptions from "./descriptions.js";
 import TECH_NAMES from "./techNames.js";
 
-export const PROJECT_NAV_TEXT = ["Description", "Learnt", "Struggles"];
+export const PROJECT_NAV_TEXT = ["Description", "Learned", "Struggles"];
 export const PROJECT_TITLES = ["Match Game", "Rotate Cube", "No Dice", "Task Tracker"];
 
 export const PROJECT_DATA = [

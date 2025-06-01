@@ -119,7 +119,7 @@ export function projectImages (projectTitle) {
       ];
       break;
     default:
-      throw new Error("Project not found! Check switch statement for correct cassing.")
+      throw new Error("Project not found! Check switch statement for correct cassing.");
   }
   return projectImageArray;
 }
@@ -135,6 +135,6 @@ export function retrieveProjectData (projectTitle) {
     case "Task Tracker":
       return PROJECT_DATA[3];
     default:
-      console.log("An invalid project title was passed.");
+      throw new Error("Project not found! Check switch statement for correct cassing.");
   }
 }
