@@ -1,6 +1,6 @@
 import Description from "./Description.jsx";
 import LearnedStruggles from "./LearnedStruggles.jsx";
-import LinkToProject from "./LinkToProject.jsx";
+import LinkProjectGit from "./LinkProjectGit.jsx";
 import ProjectCardImage from "./ProjectCardImage.jsx";
 import { PROJECT_NAV_TEXT, PROJECT_TITLES } from "./helpers/projectData.js";
 import { retrieveProjectData } from "./helpers/auxiliaryProjectFuncs.js";
@@ -77,9 +77,10 @@ export default function Projects() {
         </ProjectNavTabs>
         <ProjectCard>
           <h2>{selectedProject}</h2>
-          <LinkToProject selectedProjectData={selectedProjectData} />
+          <LinkProjectGit selectedProjectData={selectedProjectData} />
           <ProjectCardImage
             imgAlt={selectedProjectData.imgAlt}
+            imgHref={selectedProjectData.links.project}
             title={selectedProject}
           /> 
           <TextSection >

@@ -27,4 +27,8 @@ const AvatarImg = styled.img`
   display: block;
   margin: 0 auto;
   width: 25rem;
+
+  @media (width >= 550px) {
+    margin: 0 0 0 15rem;
+  }
 `;

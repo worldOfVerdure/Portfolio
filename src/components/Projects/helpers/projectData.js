@@ -9,8 +9,8 @@ export const PROJECT_DATA = [
     description: descriptions[0],
     imgAlt: "Thumbnail of the match game project",
     links: {
-      git: "https://worldofverdure.github.io/GameNMatch/"
-      // video: 
+      git: "https://github.com/worldOfVerdure/GameNMatch",
+      project: "https://worldofverdure.github.io/GameNMatch/"
     },
     tech: [TECH_NAMES.html, TECH_NAMES.css, TECH_NAMES.js],
     title: PROJECT_TITLES[0]
@@ -19,8 +19,8 @@ export const PROJECT_DATA = [
     description: descriptions[1],
     imgAlt: "Thumbnail of the rotate cube project",
     links: {
-      git: "https://github.com/worldOfVerdure/rotateCube"
-      // video: 
+      git: "https://github.com/worldOfVerdure/rotateCube",
+      project: "https://worldofverdure.github.io/rotateCube/"
     },
     tech: [TECH_NAMES.html, TECH_NAMES.css, TECH_NAMES.js],
     title: PROJECT_TITLES[1]
@@ -29,8 +29,8 @@ export const PROJECT_DATA = [
     description: descriptions[2],
     imgAlt: "Thumbnail of the of the dice game project",
     links: {
-      git: "https://github.com/worldOfVerdure/noDice"
-      // video: 
+      git: "https://github.com/worldOfVerdure/noDice",
+      project: "https://worldofverdure.github.io/noDice/"
     },
     tech: [TECH_NAMES.html, TECH_NAMES.css, TECH_NAMES.js],
     title: PROJECT_TITLES[2]
@@ -39,8 +39,8 @@ export const PROJECT_DATA = [
     description: descriptions[3],
     imgAlt: "Thumbnail of a programmer at work to signify a project under construction",
     links: {
-      git: "https://worldofverdure.github.io/managementApp/"
-      // video: 
+      git: "https://github.com/worldOfVerdure/managementApp",
+      project: "https://worldofverdure.github.io/managementApp/"
     },
     tech: [TECH_NAMES.html, TECH_NAMES.css, TECH_NAMES.js, TECH_NAMES.react, TECH_NAMES.styled],
     title: PROJECT_TITLES[3]

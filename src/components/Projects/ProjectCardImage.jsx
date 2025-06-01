@@ -1,11 +1,14 @@
 import { projectImages } from "./helpers/auxiliaryProjectFuncs";
 import { styled } from "styled-components";
 
-export default function ProjectCardImage( {imgAlt, title} ) {
+export default function ProjectCardImage( {imgHref, imgAlt, title} ) {
   const imgArray = projectImages(title);
-
   return (
-    <ProjectImage
+    <BlueSkidoo
+      href={imgHref}
+      target="_blank"
+    >
+      <ProjectImage
         alt={imgAlt}
         sizes="
           (max-width: 320px) 250px,
@@ -24,13 +27,18 @@ export default function ProjectCardImage( {imgAlt, title} ) {
           ${imgArray[5]} 900w,
           ${imgArray[6]} 1200w
         `}
-    />
+      />
+    </BlueSkidoo>
   );
 }
 
-const ProjectImage = styled.img`
-  border-radius: .6rem;
+const BlueSkidoo = styled.a`
   margin-bottom: 1rem;
   max-width: 35rem;
   width: 80%;
+`;
+
+const ProjectImage = styled.img`
+  border-radius: .6rem;
+  width: 100%;
 `;

@@ -27,6 +27,12 @@ const StyledHeader = styled.header`
   min-height: 32rem;
   width: 100%;
 
+  @media (width >= 850px) {
+    & h1 {
+      margin-left: 5rem;
+    }
+  }
+
   & h1 {
     margin-bottom: 5rem;
   }
