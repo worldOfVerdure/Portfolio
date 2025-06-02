@@ -10,9 +10,9 @@ export default function ContactMe() {
       <h2>Contact Me</h2>
       <ContactAddress>
         <ul>
-          <li><span>Name: Andrew Chupka</span></li>
-          <li><span>Email: andrewchupka84@gmail.com</span></li>
-          <li><span>Tel #: (407) 607-2105</span></li>
+          <li>Name: Andrew Chupka</li>
+          <li>Email: andrewchupka84@gmail.com</li>
+          <li>Tel #: (407) 607-2105</li>
           <SocialMediaContainer>
             <h3>Social Media</h3>
             <nav>
@@ -59,6 +59,7 @@ const ContactAddress = styled.address`
   }
 
   & ul > li {
+    font-size: clamp(1.8rem, calc(1.4rem + 1.2vw), 2.4rem);
     margin-bottom: 1rem;
   }
 
