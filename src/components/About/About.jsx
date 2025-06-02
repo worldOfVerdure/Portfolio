@@ -1,12 +1,15 @@
-import * as aboutMeText from "./aboutMeText.js";
+import aboutMeParagraphs from "./aboutMeText.js";
+import ParagraphSplitter from "../Projects/ParagraphSplitter.jsx";
 import { styled } from "styled-components";
 
 export default function About() {
   return (
     <AboutSection>
       <h2>About Me</h2>
-      <P>{aboutMeText.p1}</P>
-      <P>{aboutMeText.p2}</P>
+      <ParagraphSplitter
+        mapKey="aboutMeP"
+        paragraphs={aboutMeParagraphs}
+      />
     </AboutSection>
   );
 }
@@ -24,11 +27,11 @@ const AboutSection = styled.section`
     margin-bottom: 1.5rem;
     width: fit-content;
   }
-`;
 
-const P = styled.p`
-  font-size: clamp(1.6rem, calc(1.2rem + 1vw), 2rem);
-  line-height: 1.4;
-  margin: 1.5rem auto;
-  white-space: pre-wrap;
+  & p {
+    font-size: clamp(1.6rem, calc(1.2rem + 1vw), 2rem);
+    line-height: 1.4;
+    margin: 1.5rem auto;
+    white-space: pre-wrap;
+  }
 `;
