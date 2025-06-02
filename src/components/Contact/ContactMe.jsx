@@ -10,9 +10,9 @@ export default function ContactMe() {
       <h2>Contact Me</h2>
       <ContactAddress>
         <ul>
-          <li><span>Name: John Doe</span></li>
-          <li><span>Email: myexampleemail@example.com</span></li>
-          <li><span>Tel #: (123) 456-7890</span></li>
+          <li><span>Name: Andrew Chupka</span></li>
+          <li><span>Email: andrewchupka84@gmail.com</span></li>
+          <li><span>Tel #: (407) 607-2105</span></li>
           <SocialMediaContainer>
             <h3>Social Media</h3>
             <nav>

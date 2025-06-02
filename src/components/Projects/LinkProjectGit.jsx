@@ -21,8 +21,9 @@ export default function LinkToProject({ selectedProjectData }) {
 }
 
 const ProjectLink = styled.a`
-  text-decoration: underline;
+  font-size: clamp(1.7rem, calc(1.3rem + 1.1vw), 2rem);
   margin: 1rem 0;
+  text-decoration: underline;
 
   &:first-child {
     margin-right: .5rem;

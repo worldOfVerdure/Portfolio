@@ -21,6 +21,10 @@ const AboutSection = styled.section`
   margin: 3rem auto;
   width: 90%;
 
+  @media (width >= 1200px) {
+    width: 65%;
+  }
+
   & h2 {
     align-self: start;
     font-size: clamp(2.5rem, calc(1.86rem + 2vw), 4rem);
@@ -30,8 +34,16 @@ const AboutSection = styled.section`
 
   & p {
     font-size: clamp(1.6rem, calc(1.2rem + 1vw), 2rem);
-    line-height: 1.4;
+    line-height: 1.5;
     margin: 1.5rem auto;
-    white-space: pre-wrap;
+    text-indent: 8%;
+
+    @media (768px >= width < 1500px) {
+      text-indent: 4%;
+    }
+
+    @media (width >= 1500px) {
+      text-indent: 2%;
+    }
   }
 `;

@@ -24,7 +24,6 @@ const Text = styled.div`
   & p {
     line-height: 1.5;
     margin: 0 0 1rem 0;
-    text-align: start;
     text-indent: 10%;
   }
 
