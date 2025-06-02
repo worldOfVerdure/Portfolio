@@ -4,7 +4,7 @@ const Project1Learned = [
   ["Fisher-Yates Shuffle", `Also called the Knuth sort, this shuffle randomizes an array by having a
     pointer at the last index, i, of the array and generating a random value between 0 and i - 1.
     The random value points to another index, j. The values of i and j are swapped, and we decrement
-    the i index. Considering everything after i sorted, we continue the algorithim until i=0. The 
+    the i index. Considering everything after i sorted, we continue the algorithm until i=0. The 
     runtime and spacetime complexity being linear: O(n).`],
   ["Responsive Images", `The HTML attributes srcset and sizes allowed me to serve more appropriately
     sized images. Thus reducing the file size required when requesting the images.`],
@@ -36,7 +36,7 @@ const Project2Learned = [
   ["Radio & Name", `A group of radio buttons can be bound by the name attribute having the same 
     value. Thus, only one radio in the group may be selected at a given time.`],
   ["Import/Export", `This was the first project that I modularized my JS files with ES modules. I
-    later went on to to modularize my CSS and then components in React.`]
+    later went on to modularize my CSS and then components in React.`]
 ];
 
 const Project2Struggles = [

@@ -1,9 +1,9 @@
 const descriptions = [
   [
     `This project was completed after the Rotate Cube project with a continuation of exploring the CSS
-  perspective property and 3d transformations. There was an initial challenege of getting the front
-  and back cards to rotate seemlessly about the y-axis. Realizing that I could take both cards
-  out of their respective flow with absolute potioning and with the CSS property backface-visibility,
+  perspective property and 3d transformations. There was an initial challenge of getting the front
+  and back cards to rotate seamlessly about the y-axis. Realizing that I could take both cards
+  out of their respective flow with absolute positioning and with the CSS property backface-visibility,
   hiding the back of a 3d transformed object, I found my solution.`,
 
   `The Match Game was also my first implementation of a timer. To build this, I used the
@@ -12,7 +12,7 @@ const descriptions = [
   supplied the browser with my image sizes and breakpoints, allowing the browser, based on the
   client's pixel density to serve the most appropriate image from the selection I offered.`,
 
-  `My favorite highlight of this project was getting to implement a Knuth sort to acheive the fatest
+  `My favorite highlight of this project was getting to implement a Knuth sort to achieve the fastest
   runtime for randomly sorting an array of images with a O(n).`
   ],
   [
@@ -37,7 +37,7 @@ const descriptions = [
     possible with the ability to hold. Thus different scenarios of player scores and when they hold
     needed to be considered.`,
 
-    `Unfortunately, this was one of my first projects, and in my eagerness I didn't start with
+    `Unfortunately, this was one of my first projects, and in my eagerness, I didn't start with
     drawing designs nor flow charts for the logic. I ended up with code that constantly needed
     logical bugfixes. I was happy that after some months taking a break from this, I was able to
     come back with more experience and fresh eyes, and drew out the flow of logic and cleaned all the
@@ -51,13 +51,13 @@ const descriptions = [
     slides a tab on and off the screen. The project further differed with the instructor using
     Tailwind and myself using Styled-Components.`,
 
-    `This project was more of a capstone project to reienforce lifting state, useState, useRef,
-    list rendering and keeping components reuesable. What is truly interesting to me about this
+    `This project was more of a capstone project to reinforce lifting state, useState, useRef,
+    list rendering and keeping components reusable. What is truly interesting to me about this
     project is that this project will lend itself to learning backend. I began to work with Node.js
     as my local JS runtime and Express.js as my application server. I took a break from backend to
     instead focus on frontend technologies such as Typescript. I intend on finishing this project
     purely as a static site with intentions of setting up my own backend and changing the jsx files
-    to tsx`
+    to tsx.`
   ]
 ];
 
