@@ -40,7 +40,7 @@ export const PROJECT_DATA = [
     imgAlt: "Thumbnail of a programmer at work to signify a project under construction",
     links: {
       git: "https://github.com/worldOfVerdure/managementApp",
-      project: "https://worldofverdure.github.io/managementApp/"
+      project: "https://andrewctasktracker.netlify.app/"
     },
     tech: [TECH_NAMES.html, TECH_NAMES.css, TECH_NAMES.js, TECH_NAMES.react, TECH_NAMES.styled],
     title: PROJECT_TITLES[3]
