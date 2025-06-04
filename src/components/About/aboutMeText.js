@@ -11,7 +11,8 @@ const aboutMeParagraphs = [
   to improve. In my private and professional life, I take responsibility for my education and
   growth. This is the stance I had to learn while self-studying front end. As your next front-end
   engineer, I will be proactive to write efficient code, hungry to learn, and focused on the needs
-  of the team and product.`
+  of the team and the product. Outside of programming, I am passionate about weightlifting, shogi,
+  and sustainability.`
 ];
 
 export default aboutMeParagraphs;

@@ -11,7 +11,7 @@ export default function ContactMe() {
       <ContactAddress>
         <ul>
           <li>Name: Andrew Chupka</li>
-          <li>Email: andrewchupka84@gmail.com</li>
+          <li>Email: contact@andrewchupka.com</li>
           <li>Tel #: (407) 607-2105</li>
           <SocialMediaContainer>
             <h3>Social Media</h3>
