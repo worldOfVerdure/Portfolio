@@ -1,6 +1,6 @@
 const aboutMeParagraphs = [
-  `I am seeking to become a professional front-end engineer with the eventual goal of moving into
-  full stack. I discovered my passion for coding when taking computer science courses. Front end
+  `I am working to become a professional front-end engineer with the goal of moving into
+  full stack. I discovered my passion for coding when taking computer science courses and front end
   satisfied my need to see immediate feedback with what I was building. The fun in front end is
   building websites with syntactically valid HTML, adding responsiveness through CSS and HTML
   attributes, ensuring my JS/TS respects runtime and spacetime complexities, and using React to
