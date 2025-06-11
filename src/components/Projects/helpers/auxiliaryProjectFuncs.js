@@ -38,9 +38,9 @@ export function colorSelector(techName) {
       textColor = "#FFF";
       break;
     case TECH_NAMES.html:
-      backColor = "#E0703A";
-      borderColor = "#D85D34";
-      textColor = "#FFF";
+      backColor = "#E47F4E";
+      borderColor ="rgb(184, 82, 48)";
+      textColor = "#000";
       break;
     case TECH_NAMES.js:
       backColor = "#F7DB5E";
