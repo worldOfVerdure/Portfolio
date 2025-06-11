@@ -193,7 +193,7 @@ const NavButton = styled.button`
       else
         return "#000";
     }};
-  font-size: clamp(1.6rem, calc(1.2rem + 1vw), 2rem);
+  font-size: clamp(1.6rem, calc(1.2rem + 1vw), 1.8rem);
   margin-bottom: -.2rem;
   padding: 1.5rem 0;
   width: 100%;

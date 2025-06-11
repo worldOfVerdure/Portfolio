@@ -10,6 +10,7 @@ export default function ProjectCardImage( {imgHref, imgAlt, title} ) {
     >
       <ProjectImage
         alt={imgAlt}
+        loading="lazy"
         sizes="
           (max-width: 320px) 250px,
           (max-width: 425px) 300px,

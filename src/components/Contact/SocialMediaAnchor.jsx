@@ -6,7 +6,7 @@ export default function SocialMediaAnchor ( {imgAlt, imgSrc, link} ) {
       href={link}
       target="_blank"
     >
-      <img alt={imgAlt} src={imgSrc} />
+      <img alt={imgAlt} loading="lazy" src={imgSrc} />
     </Anchor>
   );
 }

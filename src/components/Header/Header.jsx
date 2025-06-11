@@ -1,5 +1,5 @@
 import Avatar from "./Avatar.jsx";
-import backgroundImage from "../../assets/images/header/headerBackground.png";
+import backgroundImage from "../../assets/images/header/headerBackground.webp";
 import { styled } from "styled-components";
 
 export default function Header() {
