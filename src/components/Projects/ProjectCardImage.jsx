@@ -19,14 +19,14 @@ export default function ProjectCardImage( {imgHref, imgAlt, title} ) {
           (max-width: 1200px) 900px,
           1200px
         "
-        src={imgArray[4]}
+        src={imgArray[3]}
         srcSet={`
-          ${imgArray[1]} 250w,
-          ${imgArray[2]} 300w,
-          ${imgArray[3]} 500w,
-          ${imgArray[4]} 700w,
-          ${imgArray[5]} 900w,
-          ${imgArray[6]} 1200w
+          ${imgArray[0]} 250w,
+          ${imgArray[1]} 300w,
+          ${imgArray[2]} 500w,
+          ${imgArray[3]} 700w,
+          ${imgArray[4]} 900w,
+          ${imgArray[5]} 1200w
         `}
       />
     </BlueSkidoo>

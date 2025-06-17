@@ -44,20 +44,15 @@ const descriptions = [
     bugs.`
   ],
   [
-    `The Task Tracker app was a Udemy project intended to be done by ourselves. Using the images and
-    specifications giving, I set out to make this task tracking app. The example shown to me was
-    clearly made for Desktop with a mobile-first approach not considered. Responsiveness is
-    important to me, so I set out making a mobile-first version of the site with an animation that
-    slides a tab on and off the screen. The project further differed with the instructor using
-    Tailwind and myself using Styled-Components.`,
-
-    `This project was more of a capstone project to reinforce lifting state, useState, useRef,
-    list rendering and keeping components reusable. What is truly interesting to me about this
-    project is that this project will lend itself to learning backend. I began to work with Node.js
-    as my local JS runtime and Express.js as my application server. I took a break from backend to
-    instead focus on frontend technologies such as Typescript. I intend on finishing this project
-    purely as a static site with intentions of setting up my own backend and changing the jsx files
-    to tsx.`
+    `The Resume Builder stemmed from my desire to have full control of the visuals of my Resume
+    while also being able to quickly change the text. This project's goal is to mimic the size of
+    printable paper and be saved as a pdf. This is a rare instance where responsiveness was not an
+    objective for me. I had been learning TypeScript and TSX in my spare time, so when I encountered
+    a runtime bug, where my prop being passed resulted in undefine, I switched the React project to
+    TS. The result was that  was quickly able to locate my issue. This project was also my first
+    time using absolute units which I used to achieve a near A4 sized paper. This project gave me
+    hands on experience with how TS can speed up development by pointing out bugs in a more quick
+    and precise manner.`
   ]
 ];
 

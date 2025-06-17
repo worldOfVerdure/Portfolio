@@ -1,5 +1,5 @@
 import { PROJECT_TITLES } from "./projectData.js";
-//PROJECT 1 TEXT
+//PROJECT 1 TEXT: Match Gamme
 const Project1Learned = [
   ["Fisher-Yates Shuffle", `Also called the Knuth sort, this shuffle randomizes an array by having a
     pointer at the last index, i, of the array and generating a random value between 0 and i - 1.
@@ -27,7 +27,7 @@ const Project1Struggles = [
     precedence was hidden as well.`]
   
 ];
-//PROJECT 2 TEXT
+//PROJECT 2 TEXT: Rotate Cube
 const Project2Learned = [
   ["3-D Transforms", `By using a combination of the rotate() and translate() CSS methods, I was able
     to move the facets of the cube, relative to the perspective of their scene container.`],
@@ -46,7 +46,7 @@ const Project2Struggles = [
   ["Understanding Scene", `At first I was struggling to grasp the need for a containing element to
     have a perspective property; thus, giving the facets the ability to transform in 3-D space.`]
 ];
-//PROJECT 3 TEXT
+//PROJECT 3 TEXT: No Dice
 const Project3Learned = [
   ["Improved w/ Flexbox", `This project was the first for me that required that I had flex
     containers nested. Some of these containers even had different flex-directions: a flex-direction
@@ -65,26 +65,23 @@ const Project3Struggles = [
     mistakes. I had to learn to be more patient, draw the diagrams and logical flow charts. After
     doing this, implementation became easier.`]
 ];
-//PROJECT 4 TEXT
+//PROJECT 4 TEXT: Resume Builder
 const Project4Learned = [
-  ["Lifting State", `The need arises to pass state variables as props to common siblings. However,
-    if a state variable was written inside one of the siblings when it should be shared, this state
-    needs to be lifted to the common parent. Doing so will help keep code DRY and more
-    manageable.`],
-  ["Using Modals", `I learned of using the dialog as a modal from a side project. I wanted to include
-    a modal to give users more confirmation so if they misclicked or changed their mind, they
-    wouldn't lose the text they wrote.`],
-  ["Transient Props", `I built this with Styled Components and made use of transient props which
-    are props used purely for styling purposes. With these props, I was able to control the
-    sidebar's sliding with a button click changing state, a Boolean value, which then causes the
-    side bar to slide on and off screen.`],
+  ["Using TypeScript", `This was my first independent project utilizing TypeScript and tsx. I was
+    able to practice type annotation with React components using the functional component type (FC)
+    and generics to pass the props object type.`],
+  ["TS Class Syntax", `TS offers a cleaner and more robust class syntax that is more familiar to
+    classic OOP languages like Java. I was able to make use of the constructor and access modifiers
+    (public, private, etc.) to shorten the lines required to define the class.`],
+  ["TS Benefits", `Reading about the time saving nature of TS is one thing, developing with TS and
+    getting more precise feedback about potential runtime errors is another. I was able to
+    experience better security knowing that I was passing correct types.`]
 ];
 
 const Project4Struggles = [
-  ["Setting up Backend", `I was looking into Express.js and Node.js to set up a backend server so
-    that the text entered would be saved (would need a database). My eventual goal is to set up
-    backend, though the current focus is frontend. I will implement a user object to save the text
-    entered.`]
+  ["Bug Tracking", `I originally wrote this project in JS and encountered a runtime bug where I a
+    prop I was passing resulted in undefine. The error was not apparent to me, so I converted the
+    project to TypeScript. In doing so, the location of my bug was immediately pointed out.`]
 ];
 
 const Project1LearnedStruggles = {
