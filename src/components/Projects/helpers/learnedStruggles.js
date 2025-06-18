@@ -79,8 +79,8 @@ const Project4Learned = [
 ];
 
 const Project4Struggles = [
-  ["Bug Tracking", `I originally wrote this project in JS and encountered a runtime bug where I a
-    prop I was passing resulted in undefine. The error was not apparent to me, so I converted the
+  ["Bug Tracking", `I originally wrote this project in JS and encountered a runtime bug where a
+    prop being passed was undefine. The error was not apparent to me, so I converted the
     project to TypeScript. In doing so, the location of my bug was immediately pointed out.`]
 ];
 
